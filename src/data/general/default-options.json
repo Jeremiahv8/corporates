@@ -1,0 +1,41 @@
+{
+    "countries": [
+        {
+            "name": "Trinidad and Tobago"
+        },
+        {
+            "name": "United States Of America"
+        }
+    ],
+    "paymentmethods": [
+        {
+            "id": "1",
+            "name": "Cash on Delivery",
+            "enabled": true
+        },
+        {
+            "id": "2",
+            "name": "Credit Card",
+            "enabled": false
+        },
+        {
+            "id": "3",
+            "name": "Online",
+            "enabled": false
+        }
+    ],
+    "shippingmethods": [
+        {
+            "id": "1",
+            "name": "Express (Same day)",
+            "enabled": true,
+            "fee": "$70.00"
+        },
+        {
+            "id": "2",
+            "name": "Standard (within 3 Days)",
+            "enabled": true,
+            "fee": "Free"
+        }
+    ]
+}

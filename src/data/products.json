@@ -1,0 +1,36 @@
+[
+  {
+    "id": "0",
+    "sku": "asdf111",
+    "name": "Delivery Service",
+    "slug": "delivery-service",
+    "price": 40,
+    "discount": 0,
+    "new": true,
+    "rating": 0,
+    "ratingCount": 0,
+    "saleCount": 0,
+    "multistop": true,
+    "maxstops": 10,
+    "isservice": true,
+    "category": [
+      "service"
+    ],
+    "tag": [
+      "delivery",
+      "transport"
+    ],
+    "stock": 10,
+    "thumbImage": [
+      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
+      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
+    ],
+    "image": [
+      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
+      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
+    ],
+    "shortDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
+    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs."
+  }
+
+]

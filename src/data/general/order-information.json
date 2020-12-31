@@ -1,0 +1,38 @@
+{
+    "id": 0,
+    "userId": 0,
+    "firstname": "Jeremiah",
+    "lastname": "Cruickshank",
+    "email": "jeremiahv8@hotmail.com",
+    "phone": "7173110",
+    "address": "40A Brunton rd, St James",
+    "country": "Trinidad and Tobago",
+    "city": "Port of Spain",
+    "grandtotal": 40,
+    "paymentmethod": "Cash on Delivery",
+    "isUDLVR": true,
+    "products": [
+        {
+          "id": 0,
+          "productId": 11
+        }
+    ],
+    "packages": [
+        {
+            "id": 0,
+            "CustomerName": "Jeremiah Cruickshank",
+            "ContactNumber": "(868) 497-4341",
+            "Address": "40A Brunton RD, St James, Trinidad",
+            "PaymentType": "Cash on Delivery",
+            "CashToCollect": 720
+        },
+        {
+            "id": 1,
+            "CustomerName": "Wesley Francis",
+            "ContactNumber": "(868) 321-4567",
+            "Address": "PoS",
+            "PaymentType": "Cash on Delivery",
+            "CashToCollect": 150
+        }
+    ]
+}

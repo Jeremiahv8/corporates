@@ -1,0 +1,82 @@
+{
+    "Id": "1",
+    "FirstName": "UDLVR",
+    "LastName": "Ltd",
+    "Domain": "udlvr.com",
+    "phone": "+1 (868) 770-4246",
+    "email": "info@udlvr.com",
+    "address": "#230 Eastern Main Road, El Dorado, Saint George",
+    "googlemapembeded": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt3LYFYkANowRsVsTcSAbKV8&key=AIzaSyDbmsa6zJOdUnKaEDtmGPY1RZmYmeW9VwU",
+    "hours": [
+        {
+            "id": "1",
+            "day": "Monday - Friday",
+            "time": "8AM - 4PM"
+        },
+        {
+            "id": "2",
+            "day": "Saturday - Sunday",
+            "time": "8AM - 1PM"
+        }
+    ],
+    "social": [
+            {
+                "id": "1",
+                "name": "Facebook",
+                "url": "https://www.facebook.com/UDLVRTrinidad",
+                "enabled": true
+            },
+            {
+                "id": "2",
+                "name": "Instagram",
+                "url": "https://www.instagram.com/udlvr_tt/",
+                "enabled": true
+            },
+            {
+                "id": "3",
+                "name": "Twitter",
+                "url": "",
+                "enabled": false
+            }
+    ],
+    "languages": [
+        {
+            "id": "1",
+            "name": "English",
+            "code": "en",
+            "enabled": true
+        },
+        {
+            "id": "2",
+            "name": "Spanish",
+            "code": "es",
+            "enabled": false
+        },
+        {
+            "id": "3",
+            "name": "French",
+            "code": "fr",
+            "enabled": false
+        }
+    ],
+    "currencies": [
+        {
+            "id": "1",
+            "name": "TTD",
+            "code": "TT",
+            "enabled": true
+        },
+        {
+            "id": "2",
+            "name": "USD",
+            "code": "US",
+            "enabled": true
+        },
+        {
+            "id": "3",
+            "name": "GBT",
+            "code": "GB",
+            "enabled": false
+        }
+    ]
+}

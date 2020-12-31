@@ -1,0 +1,20 @@
+
+/*=============================================
+=            animations            =
+=============================================*/
+
+@keyframes fadeInDown {
+  0% {
+    transform: translate3d(0,-100%,0);
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+
+    opacity: 1;
+  }
+}
+
+/*=====  End of animations  ======*/
+

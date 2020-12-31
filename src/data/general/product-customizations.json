@@ -1,0 +1,94 @@
+{
+    "id": 0,
+    "productId": 11,
+    "userId": 0,
+    "dropoffaddresses": [
+        {
+            "id": 0,
+            "CustomerName": "Jeremiah Cruickshank",
+            "ContactNumber": "(868) 497-4341",
+            "Address": "40A Brunton RD, St James, Trinidad",
+            "PaymentType": "Cash on Delivery",
+            "CashToCollect": 200
+        }
+    ]
+}
+
+{
+    "Email":"info@udlvr.com",
+    "Firstname":"UDLVR",
+    "Lastname":"Ltd",
+    "Contact":"+1 (868) 770-4246",
+    "Address":"#230 Eastern Main Road, El Dorado, Saint George",
+    "Cost":40,
+    "Packages":[
+        {
+            "CustomerName":"Jeremaih Cruickshank",
+            "PackageName":"Supibox Toy",
+            "CustomerEmail":"Jeremiahv8@hotmail.com",
+            "CustomerAddress":"",
+            "PaymentType":"Cash on Delivery",
+            "PackageCost":"570",
+            "ExpectiedDeliveryDate":"",
+            "MerchantName":"Jeremaih",
+            "MerchantEmail":"Jeremiahv8@hotmail.com",
+            "MerchantAddress":"St James, Port of Spain",
+            "MerchantContactNumber":"Cruickshank",
+            "Stage":"",
+            "CustomerContact":"+18683797621"
+        }
+    ]
+}
+
+{  
+    "Email":"info@udlvr.com",
+    "Firstname":"UDLVR",
+    "Lastname":"Ltd",
+    "Contact":"+1 (868) 770-4246",
+    "Address":"#230 Eastern Main Road, El Dorado, Saint George",
+    "Cost":40,
+    "Packages":[
+        {
+            "Id":0,
+            "CustomerName":"Jeremaih Cruickshank",
+            "PackageName":"SupiToys",
+            "CustomerEmail":"Jeremiahv8@hotmail.com",
+            "CustomerAddress":"St James, Port of Spain",
+            "PaymentType":"Cash on Delivery",
+            "PackageCost":"65",
+            "ExpectiedDeliveryDate":"",
+            "MerchantName":"Jeremaih",
+            "MerchantEmail":"Jeremiahv8@hotmail.com",
+            "MerchantAddress":"St James, Port of Spain",
+            "MerchantContactNumber":"Cruickshank",
+            "Stage":"Requesting",
+            "CustomerContact":""
+        }
+    ]
+}
+
+{
+    "Email":"info@udlvr.com",
+    "Firstname":"UDLVR",
+    "Lastname":"Ltd",
+    "Contact":"+1 (868) 770-4246",
+    "Address":"#230 Eastern Main Road, El Dorado, Saint George",
+    "Cost":40,
+    "Packages":[
+        {
+            "Id":0,
+            "CustomerName":"Jeremaih Cruickshank",
+            "PackageName":"SupiToys",
+            "CustomerEmail":"Jeremiahv8@hotmail.com",
+            "CustomerAddress":"St James, Port of Spain",
+            "CustomerContact":"717-3110",
+            "PaymentType":"Cash on Delivery",
+            "PackageCost":"500",
+            "MerchantName":"Aegean",
+            "MerchantEmail":"info@aegeantt.com",
+            "MerchantAddress":"El Dorado",
+            "MerchantContact":"7173110",
+            "Stage":"Requesting"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+
+/*=============================================
+=            section title            =
+=============================================*/
+
+.section-title {
+  font-size: 48px;
+  font-weight: 400;
+
+  color: $black--two;
+
+@include respond (large-mobile) {
+    font-size: 35px;
+  }
+
+  &--secondary {
+    font-size: 14px;
+    font-weight: 500;
+
+    color: $black--two;
+
+    &--style2 {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.6;
+
+      color: $grey--seven;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    letter-spacing: 1px;
+
+    color: $black--two;
+  }
+}
+
+.widget-slider-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+
+  position: relative;
+
+  margin-bottom: 35px;
+  padding-right: 60px;
+
+  color: $black--two;
+}
+
+.rotate-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  position: absolute;
+  top: 250px;
+
+  letter-spacing: 1px;
+
+  color: $black--two;
+  &--left {
+    transform: rotate(90deg) translate(30%, 180%);
+  }
+
+  &--right {
+    right: -15px;
+
+    transform: rotate(-90deg);
+  }
+}
+
+
+/*=====  End of section title  ======*/
+

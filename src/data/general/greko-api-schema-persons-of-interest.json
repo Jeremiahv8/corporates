@@ -1,0 +1,24 @@
+{
+    "id": 0,
+    "UserId": 0,
+    "Domain": "aegean.com",
+    "Name": "Just a systematic way to view our primary customers",
+    "Description": "Have a wierd feeling that this could expand into something even more interesting",
+    "Users": [
+        {
+            "id": 0,
+            "UserId": 0,
+            "Domain": "aegean.com"
+        },
+        {
+            "id": 1,
+            "UserId": 1,
+            "Domain": "udlvr.com"
+        },
+        {
+            "id": 2,
+            "UserId": 2,
+            "Domain": "supibox.com"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "Id": 0,
+    "UserId": 0,
+    "ApplicationId": 1,
+    "ProductId": 11,
+    "Firstname": "UDLVR",
+    "Lastname": "Ltd.",
+    "Contact": "312-3348",
+    "Email": "nikita.noray@aegeantt.com",
+    "Domain": "udlvr.com",
+    "Address": "#230 Eastern Main Road, El Dorado, Saint George",
+    "DeliveryCost": 40,
+    "FeePercent": 1,
+    "ExpectiedPickUpDate": "12-03-2020",
+    "IsManualDelivery": true,
+    "Stage": "Picking Up",
+    "TotalCost": 100,
+    "Packages": [
+        {
+            "Id": 0,
+            "UserId": 0,
+            "ApplicationId": 1,
+            "CustomerName": "Jeremiah Cruickshank",
+            "ContactNumber": "(868) 497-4341",
+            "Email": "jeremiah.cruickshank@aegeantt.com",
+            "Address": "40A Brunton RD, St James, Trinidad",
+            "PaymentType": "Cash on Delivery",
+            "Cost": 60,
+            "ExpectiedDeliveryDate": "13-03-2020",
+            "Packagename": "Supibox",
+            "RefProductId": 12,
+            "MerchantId": 1,
+            "MerchantName": "Supibox",
+            "MerchantEmail": "info@supibox.com",
+            "stage": "Picking Up"
+        }
+    ]
+}

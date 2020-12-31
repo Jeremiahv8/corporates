@@ -1,0 +1,9 @@
+[
+    {
+        "id": "1",
+        "label": "Logout",
+        "url": "/my-account/logout",
+        "enabled": true,
+        "subitems": []
+    }
+]

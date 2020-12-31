@@ -1,0 +1,150 @@
+/*=============================================
+=            base            =
+=============================================*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+
+    background-color: $white;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a,
+button {
+    display: inline-block;
+
+    cursor: pointer;
+    transition: $transition--default;
+}
+
+*:focus {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: outside none none;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent !important;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: transparent !important;
+} /* FF 4-18 */
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: transparent !important;
+} /* FF 19+ */
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: transparent !important;
+} /* IE 10+ */
+
+/*=====  End of base  ======*/
+
+
+.plugBase{
+    padding-left: 20px;
+}
+.plugBase .MuiIconButton-label{
+}
+
+.plugBase .MuiFormControlLabel-root .MuiIconButton-label{
+    color: red;
+
+}
+.plugBase .MuiFormControlLabel-root .MuiIconButton-label{
+    color: red;
+
+}
+.plugBase .MuiFormControlLabel-root.Mui-checked{
+    color: blue !important;
+
+}
+
+.plugStyle{
+}
+
+.grekoapiheader{
+
+    padding-top: 25px;
+    height: 56px;
+    line-height: 56px;
+
+}
+.grekoapiheader img{
+    height: 50px;
+}
+
+.DropoffField{
+    display: grid;
+    margin-bottom: 20px;
+}
+.DropoffSplit{
+    display: flex;
+    justify-content: space-between;
+}
+
+.DropoffField_Split{
+    display: grid;
+    margin-bottom: 20px;
+    width: 47%;
+}
+
+
+@media (max-width: 720px) {
+    .grekoapiheader{
+        padding-top: 0;
+    }
+
+    .grekoapiheader img{
+        height: 24px
+    }
+
+    .DropoffField{
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    .DropoffSplit{
+        display: block;
+        justify-content: space-between;
+    }
+
+    
+    .DropoffField_Split{
+        width: 100%;
+    }
+}
+
+

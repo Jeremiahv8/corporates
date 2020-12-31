@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Jeremiah Cruickshank",
+    "designation": "Farmer",
+    "image": "/assets/images/testimonial/testimonial-1-80x80.png",
+    "content": "I can say delivery dedication is second to none."
+  },
+  {
+    "id": "2",
+    "name": "Isaiah Cruickshank",
+    "designation": "Plumber",
+    "image": "/assets/images/testimonial/testimonial-2-80x80.jpg",
+    "content": "This has already been my fifth-time purchasing from here. I have been highly satisfied with what i got."
+  },
+  {
+    "id": "3",
+    "name": "Nikita Noray",
+    "designation": "Carpenter",
+    "image": "/assets/images/testimonial/testimonial-3-80x80.jpg",
+    "content": "There's nothing would satisfy me much more than a worry-free secure and responsive to use high-traffic site."
+  },
+  {
+    "id": "4",
+    "name": "Wesley Frances",
+    "designation": "Teacher",
+    "image": "/assets/images/testimonial/testimonial-4-80x80.jpg",
+    "content": "Five-star for good customer support. They have the ability to resolve any issue in less than the time for a coffee cup."
+  }
+]

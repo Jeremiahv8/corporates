@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "subtitle": "The Power to do more",
+    "title": "Dell Laptops",
+    "url": "/shop/left-sidebar",
+    "bgImage": "https://img5.goodfon.com/wallpaper/nbig/5/d8/dell-xps-13-ios-computer.jpg",
+    "titlestyle": {
+      "color": "white"
+    },
+    "subtitlestyle": {
+      "color": "white"
+    },
+    "buttonstyle": {
+      "color": "black",
+      "backgroundColor": "white"
+    },
+    "buttonhoverstyle": {
+      "background-olor" : "red"
+    }
+
+    
+
+  },
+  {
+    "id": "2",
+    "subtitle": "All items subject to free delivery, Forever!",
+    "title": "Free Delivery",
+    "url": "/shop/left-sidebar",
+    "bgImage": "https://scontent.fpos2-1.fna.fbcdn.net/v/t1.0-9/121666291_179427417062684_676052995839010788_o.jpg?_nc_cat=110&_nc_sid=a26aad&_nc_ohc=Dsco1n8AYMkAX-xTTvs&_nc_oc=AQkyCFkD36s8LpzAPXNOD0IaVvPgHckqXqENekXJXnQWMBL0rREzTYprZPozX45ERuY&_nc_ht=scontent.fpos2-1.fna&oh=2e7695ff707952898443ea814e6a8b77&oe=5FB1508E",
+    "titlestyle": {
+      "color": "white"
+    },
+    "subtitlestyle": {
+      "color": "white"
+    },
+    "buttonstyle": {
+      "color": "black",
+      "backgroundColor": "white"
+    },
+    "buttonhoverstyle": {
+      "background-olor" : "red"
+    }
+  },
+  {
+    "id": "3",
+    "subtitle": "Just the right amount of everything",
+    "title": "iPhone 11",
+    "url": "/shop/left-sidebar",
+    "bgImage": "https://thegadgetflow.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-and-iPhone-11-Pro-03.jpeg",
+    "titlestyle": {
+      "color": "white"
+    },
+    "subtitlestyle": {
+      "color": "white"
+    },
+    "buttonstyle": {
+      "color": "black",
+      "backgroundColor": "white"
+    },
+    "buttonhoverstyle": {
+      "background-olor" : "red"
+    }
+  }
+]

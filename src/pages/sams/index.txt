@@ -1,0 +1,23 @@
+    import React, { useRef } from "react";
+    import { useRouter } from "next/router";
+    import Cookies from 'universal-cookie';
+
+    const SignInPage = () => {
+
+    const user = {
+        Id: 1,
+        Email: "info@udlvr.com"
+    };
+
+    const cookies = new Cookies();
+    cookies.set('user',{user}, { path: './' });
+    console.log(cookies.get('user')); 
+
+        
+
+  return (
+    <></>
+  );
+};
+
+export default SignInPage;

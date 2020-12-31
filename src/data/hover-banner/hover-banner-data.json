@@ -1,0 +1,39 @@
+[
+    {
+        "id": "1",
+        "title": "Courier Service",
+        "url": "/shop",
+        "bgimage": "https://filemanager.aegeantt.com/cdn/UDLVR/Courier%20Service.png",
+        "titlestyle": {
+            "color": "White"
+        },
+        "linkstyle": {
+            "color": "White",
+            "border-bottom": "1px solid white"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Moving Service",
+        "url": "/shop",
+        "bgimage": "https://filemanager.aegeantt.com/cdn/UDLVR/Moving%20Service%20-%20Copy.png",
+        "titlestyle": {
+            "color": "white"
+        },
+        "linkstyle": {
+            "color": "White"
+        }
+    },
+    {
+        "id": "3",
+        "title": "Skybox Service",
+        "url": "/shop",
+        "bgimage": "https://filemanager.aegeantt.com/cdn/UDLVR/Skybox%20Service%20-%20Copy.png",
+        "titlestyle": {
+            "color": "white"
+        },
+        "linkstyle": {
+            "color": "White"
+        }
+    }
+]
