@@ -685,13 +685,32 @@ const ProductDescription = ({
     console.log(info);
   }
 
+
+  function UniqueNumber() {
+    var d = new Date();
+    var n = d.getTime();
+    return n;
+  }
+
+  function Date_YYYYMMDD() {
+    var FullDate = new Date();
+    var y = FullDate.getFullYear();
+    var m = ("0"+ (FullDate.getMonth()+1)).split(-2);
+    var d = ("0"+ FullDate.getDate()).split(-2);
+    return y +"-"+ m +"-"+ d;
+  }
+  
+
   function createOrder(user_GrekoAPI_UserId, user_Email, orderData){
     const data = orderData;
     const email = user_Email;
     const _id = user_GrekoAPI_UserId;
 
-    console.log("createOrder_");
-    console.log(data);
+    
+
+    //  DISABLE NORMAL FUNCTIONALITY
+    /*
+    
     fetch("https://greko-api-dev.herokuapp.com/order/create",//?_id="+ user_GrekoAPI_UserId +"&email="+ user_Email,
     {
         method: 'POST',
@@ -703,7 +722,67 @@ const ProductDescription = ({
     })
     .then(data => data.json())
     .then(function(info){ createOrder_handler(info) })
-    .catch(function(info){ console.log(info) })
+    .catch(function(info){ console.log(info) });
+    */
+
+    console.log("Detrack Order");
+
+
+    let DetrackData = { 
+      "data": {
+        "id": "5b22055510c92b1a046ece04",
+        "type": "Delivery",
+        "primary_job_status": "dispatched",
+        "do_number": UniqueNumber(),
+        "attempt": 1,
+        "date": Date_YYYYMMDD(),
+        "start_date": Date_YYYYMMDD(),
+        "job_age": 1,
+        "tracking_number": "T0",
+        "order_number": "ORN12345678",
+        "address": data.Packages[0].CustomerAddress,
+        "postal_code": "470140",
+        "deliver_to_collect_from": data.Packages[0].CustomerName,
+        "phone_number": data.Packages[0].CustomerContact,
+        "fax_number": data.Packages[0].CustomerContact,
+        "notify_email": data.Email,
+        "detrack_number": "DET2000001",
+        "status": "dispatched",
+        "tracking_status": "Info received",
+        "payment_amount": data.Packages[0].PackageCost,
+        "payment_method": data.Packages[0].PaymentType,
+        "items": [
+            {
+                "id": "5b22055510c92b1a046ece05",
+                "sku": "12345678",
+                "item_description": data.Packages[0].PackageName
+            }
+        ]
+      }
+    }
+
+    console.log(DetrackData);
+
+
+    //  Send to Detrack
+    fetch("https://app.detrack.com/api/v2/dn/jobs",
+    {
+        method: 'POST',
+        headers: {
+          'X-API-KEY': '490c06659dc0ee1251fe360f39ddcf046b4dd5c73abf3910',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(DetrackData)
+
+    })
+    .then(DetrackData => DetrackData.json())
+    .then(function(info){ createOrder_handler(info) })
+    .catch(function(info){ console.log(info) });
+  }
+
+  function createOrder_handler(info){
+    console.log("Detrack_");
+    console.log(info);
   }
 
   function createOrder_handler(info){
@@ -818,19 +897,19 @@ const ProductDescription = ({
 
   
   let email = user_Email + "";
-  console.log("email_");
-  console.log(email);
+  //console.log("email_");
+  //console.log(email);
   let NameAndDomain = email.split("@");
   let domain = NameAndDomain[1];
 
 
   IsPartner = Partners.includes(domain);
 
+  /*
   console.log(domain);
-
   console.log("Is Partner?");
   console.log(IsPartner);
-
+  */
 
   if(IsPartner){
 

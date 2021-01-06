@@ -1,10 +1,10 @@
 {
     "Id": "1",
-    "FirstName": "UDLVR",
-    "LastName": "Ltd",
-    "Domain": "udlvr.com",
-    "phone": "+1 (868) 770-4246",
-    "email": "info@udlvr.com",
+    "FirstName": "corporates",
+    "LastName": "app",
+    "Domain": "corporates.app",
+    "phone": "+1 (868) 717-3110",
+    "email": "info@corporates.app",
     "address": "#230 Eastern Main Road, El Dorado, Saint George",
     "googlemapembeded": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt3LYFYkANowRsVsTcSAbKV8&key=AIzaSyDbmsa6zJOdUnKaEDtmGPY1RZmYmeW9VwU",
     "hours": [
@@ -23,13 +23,13 @@
             {
                 "id": "1",
                 "name": "Facebook",
-                "url": "https://www.facebook.com/UDLVRTrinidad",
+                "url": "https://www.facebook.com/AegeanTT",
                 "enabled": true
             },
             {
                 "id": "2",
                 "name": "Instagram",
-                "url": "https://www.instagram.com/udlvr_tt/",
+                "url": "https://www.instagram.com/aegean_tt/",
                 "enabled": true
             },
             {
