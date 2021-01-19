@@ -2,9 +2,11 @@
     "favico": "https://filemanager.aegeantt.com/cdn/UDLVR/UDLVR%20Icon.png",
     "font": "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap",
     "layout": "furniture",
-    "logo": "https://filemanager.aegeantt.com/cdn/UDLVR/UDLVR%20Logo.png",
+    "logo": "https://filemanager.aegeantt.com/cdn/corporates/corp%20white.png",
+    "logodark":"https://filemanager.aegeantt.com/cdn/corporates/corp%20black.png",
     "logostyle": {
-        "backgroundColor": "rgba(0,0,0,0)"
+        "backgroundColor": "rgba(0,0,0,0)",
+        "height": "40px"
     },
     "pagedefaults": {
         "breadcrumbbanner": "https://image.freepik.com/free-vector/flat-vector-cargo-delivery-service-background_73174-204.jpg"

@@ -16,6 +16,18 @@ import CartOverlay from "./elements/CartOverlay";
 import WishlistOverlay from "./elements/WishlistOverlay";
 import MobileMenu from "./elements/MobileMenu";
 
+import branding from "../../data/general/branding.json";
+import Badge from '@material-ui/core/Badge';
+import Avatar from '@material-ui/core/Avatar';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+
+import IconButton from '@material-ui/core/IconButton';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+
+import AppsIcon from '@material-ui/icons/Apps';
+
+import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
+
 const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
@@ -44,6 +56,76 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
   const handleScroll = () => {
     setScroll(window.scrollY);
   };
+
+  let logostyle = branding.logostyle;
+
+
+
+  const StyledBadge = withStyles((theme) => ({
+    badge: {
+      backgroundColor: '#44b700',
+      color: '#44b700',
+      boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
+      '&::after': {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        borderRadius: '50%',
+        animation: '$ripple 1.2s infinite ease-in-out',
+        border: '1px solid currentColor',
+        content: '""',
+      },
+    },
+    '@keyframes ripple': {
+      '0%': {
+        transform: 'scale(.8)',
+        opacity: 1,
+      },
+      '100%': {
+        transform: 'scale(2.4)',
+        opacity: 0,
+      },
+    },
+  }))(Badge, Avatar);
+  
+  const SmallAvatar = withStyles((theme) => ({
+    root: {
+      width: 22,
+      height: 22,
+      border: `2px solid ${theme.palette.background.paper}`,
+    },
+  }))(Avatar);
+  
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      '& > *': {
+        margin: theme.spacing(1),
+      },
+    },
+  }));
+  const classes = useStyles();
+
+
+  const StyledBadge_Notification = withStyles((theme) => ({
+    badge: {
+      right: -2,
+      top: 0,
+      border: `2px solid`,
+      padding: '0 4px',
+    },
+  }))(Badge);
+
+  const StyledBadge_Apps = withStyles((theme) => ({
+    badge: {
+      right: -2,
+      top: 0,
+      border: `2px solid`,
+      padding: '0 4px',
+    },
+  }))(Badge);
 
   return (
     <Fragment>
@@ -74,12 +156,14 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
               <Link href="/" as={process.env.PUBLIC_URL + "/"}>
                 <a>
                   <img
-                    src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+                    style={logostyle}
+                    src={branding.logodark}
                     className="img-fluid dark-logo"
                     alt=""
                   />
                   <img
-                    src={process.env.PUBLIC_URL + "/assets/images/logo-alt.png"}
+                    style={logostyle}
+                    src={branding.logo}
                     className="img-fluid white-logo"
                     alt=""
                   />
@@ -93,48 +177,8 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
             {/* icons */}
             <div className="header-content__icons space-pl--15">
               <ul className="d-none d-lg-block">
-                <li>
-                  <button
-                    onClick={() => {
-                      setOffCanvasSearchActive(true);
-                      document
-                        .querySelector("body")
-                        .classList.add("overflow-hidden");
-                    }}
-                  >
-                    <IoIosSearch />
-                  </button>
-                </li>
-                <li>
-                  <Link
-                    href="/other/login-register"
-                    as={process.env.PUBLIC_URL + "/other/login-register"}
-                  >
-                    <a>
-                      <IoMdPerson />
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <button
-                    onClick={() => {
-                      setOffCanvasWishlistActive(true);
-                      document
-                        .querySelector("body")
-                        .classList.add("overflow-hidden");
-                    }}
-                  >
-                    <IoIosHeartEmpty />
-                    {wishlistItems.length >= 1 ? (
-                      <span className="count">
-                        {wishlistItems.length ? wishlistItems.length : ""}
-                      </span>
-                    ) : (
-                      ""
-                    )}
-                  </button>
-                </li>
-                <li>
+                
+                <li >
                   <button
                     onClick={() => {
                       setOffCanvasCartActive(true);
@@ -143,17 +187,58 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
                         .classList.add("overflow-hidden");
                     }}
                   >
-                    <IoIosCart />
-                    {cartItems.length >= 1 ? (
-                      <span className="count">
-                        {cartItems.length ? cartItems.length : ""}
-                      </span>
-                    ) : (
-                      ""
-                    )}
+                    <IconButton aria-label="cart">
+                      <StyledBadge_Apps badgeContent={0} color="secondary">
+                        <AppsIcon />
+                      </StyledBadge_Apps>
+                    </IconButton>
                   </button>
                 </li>
+                
+                <li >
+                  <button
+                    onClick={() => {
+                      setOffCanvasCartActive(true);
+                      document
+                        .querySelector("body")
+                        .classList.add("overflow-hidden");
+                    }}
+                  >
+                    <IconButton aria-label="cart">
+                      <StyledBadge_Notification badgeContent={4} color="secondary">
+                        <NotificationsNoneIcon />
+                      </StyledBadge_Notification>
+                    </IconButton>
+                  </button>
+                </li>
+
+                <li >
+                <button
+                    onClick={() => {
+                      setOffCanvasCartActive(true);
+                      document
+                        .querySelector("body")
+                        .classList.add("overflow-hidden");
+                    }}
+                  >
+                  <a style={{background:"blue", width:"40px", height:"40px", "borderRadius": "5em"}}>
+                    <StyledBadge
+                      overlap="circle"
+                      anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'right',
+                      }}
+                      variant="dot"
+                    >
+                      <Avatar alt="Aminata Cruickshank" src="/static/images/avatar/1.jpg" />
+                    </StyledBadge>
+                  </a>
+                  </button>
+                </li>
+
               </ul>
+
+
 
               <ul className="d-block d-lg-none">
                 <li>

@@ -1,3 +1,5 @@
+
+
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoIosCart } from "react-icons/io";
@@ -12,21 +14,22 @@ import { CountdownTimerOne } from "../../components/Countdown";
 import blogData from "../../data/blog-posts/blog-post-one.json";
 import heroSliderData from "../../data/hero-sliders/hero-slider-seven.json";
 
-const Collection = () => {
+import { corpLayout } from "../../components/Layout";
+
+const corp = () => {
   return (
-    <LayoutNine aboutOverlay={false}>
+    <corpLayout aboutOverlay={false}>
+      {/* hero slider */}
+      <HeroSliderSeven sliderData={heroSliderData} />
+      <div className="space-mb--r100"></div>
+
+     
       <div style={{background:"red", width:"100vw", height:"100vh", position: "fixed", opacity: ".5", display:"none"}}>
 
 
-      </div>
-
-      <div style={{background:"red", width:"100%", minHeight:"110vh"}}>
-
-
-      </div>
-
-    </LayoutNine>
+        </div>
+    </corpLayout>
   );
 };
 
-export default Collection;
+export default corp;

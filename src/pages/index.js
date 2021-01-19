@@ -18,6 +18,7 @@ import lookbook from "../pages/home/lookbook";
 import perfumes from "../pages/home/perfumes";
 import smartdesign from "../pages/home/smart-design";
 import trending from "../pages/home/trending";
+import corp from "../pages/home/corp";
 
 import branding from "../data/general/branding.json";
 
@@ -48,7 +49,7 @@ const Home = () => {
   let Base = layouts[branding.layout];
 
   if(isComingSoon) Base = comingsoon;
-  if(isEmailLogin) Base = emaillogin;
+  if(isEmailLogin) Base = collection;
   return (
     <>
       <Base/>

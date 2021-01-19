@@ -1,14 +1,15 @@
 import { HeaderSeven } from "../Header";
 import { FooterFour } from "../Footer";
 
-const LayoutTwo = ({ children, aboutOverlay }) => {
+const corpLayout = ({ children, aboutOverlay }) => {
   return (
     <div>
       <HeaderSeven aboutOverlay={aboutOverlay} />
       {children}
-      {/* <!<FooterFour /> */}
+      <FooterFour />
+
     </div>
   );
 };
 
-export default LayoutTwo;
+export default corpLayout;
