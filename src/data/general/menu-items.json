@@ -1,9 +1,24 @@
 [
     {
         "id": "1",
-        "label": "Logout",
-        "url": "/my-account/logout",
+        "label": "Shop",
+        "url": "/shop",
+        "enabled": true,
+        "subitems": []
+    },
+    {
+        "id": "1",
+        "label": "About",
+        "url": "/about-us",
+        "enabled": true,
+        "subitems": []
+    },
+    {
+        "id": "1",
+        "label": "Contact",
+        "url": "/contact-us",
         "enabled": true,
         "subitems": []
     }
+
 ]

@@ -56,7 +56,7 @@ const Navigation = () => {
         count++;
         return <li key={"P"+ item.id + count}>
           <Link href={item.url} as={process.env.PUBLIC_URL + item.url}>
-            <a>{item.label}</a>
+            <a style={{lineHeight:"0"}}>{item.label}</a>
           </Link>
           <ListSubMenuItems subitems={item.subitems}/>
         </li>;

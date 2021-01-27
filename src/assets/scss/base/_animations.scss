@@ -18,3 +18,115 @@
 
 /*=====  End of animations  ======*/
 
+.App.Closed{
+  filter: blur(10px);
+  transform: scale(.9);
+  opacity: 0;
+  animation-duration: .15s;
+  animation-name: CloseApp;
+    
+}
+@keyframes CloseApp {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    filter: blur(10px);
+    transform: scale(.9);
+    opacity: 0;
+  }
+}
+
+.App.Opened{
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  animation-duration: .3s;
+  animation-name: OpenApp;
+}
+@keyframes OpenApp {
+  0% {
+    filter: blur(10px);
+    transform: scale(.9);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+.Profile.Closed{
+  filter: blur(10px);
+  opacity: 0;
+  animation-duration: .15s;
+  animation-name: CloseProfile;
+
+  z-index: 0;
+    
+}
+@keyframes CloseProfile {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+.Profile.Closed .ProfileContainer{
+  animation-duration: .15s;
+  animation-name: CloseProfile_Container;
+}
+@keyframes CloseProfile_Container {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+.Profile.Opened{
+  filter: blur(0);
+  opacity: 1;
+  animation-duration: .15s;
+  animation-name: OpenProfile;
+
+  z-index: 1;
+  
+}
+@keyframes OpenProfile {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.Profile.Opened .ProfileContainer{
+  animation-duration: .3s;
+  animation-name: OpenedProfile_Container;
+}
+@keyframes OpenedProfile_Container {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

@@ -28,7 +28,7 @@ import AppsIcon from '@material-ui/icons/Apps';
 
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 
-const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
+const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppState, ProfileState, setProfileState }) => {
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -115,6 +115,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
       top: 0,
       border: `2px solid`,
       padding: '0 4px',
+      width: "10px"
     },
   }))(Badge);
 
@@ -127,15 +128,61 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
     },
   }))(Badge);
 
+
+
+  const [Logo, setLogo] = useState("");
+  const [Logo_D, setLogo_D] = useState("");
+  const [Logo_height, setLogo_height] = useState("");
+
+  React.useEffect(() => {
+    // window is accessible here.
+    console.log("window.innerHeight", window.innerHeight);
+
+    console.log(window.location.href);
+    let url = window.location.href;
+    var domain = url.replace('http://','').replace('https://','').split(/[/?#]/)[0];
+    console.log(domain);
+
+    var HUB_Logo = {
+      "localhost:3000": "https://filemanager.aegeantt.com/cdn/MysticLights/light%20logo_210122153708.png",
+      "corporates.app": "",
+      "mistic-lights.com": "https://filemanager.aegeantt.com/cdn/MysticLights/light%20logo_210122153708.png"
+    };
+    var HUB_Logo_D = {
+      "localhost:3000": "https://filemanager.aegeantt.com/cdn/MysticLights/dark%20logo.png",
+      "corporates.app": "",
+      "mistic-lights.com": "https://filemanager.aegeantt.com/cdn/MysticLights/dark%20logo.png"
+    };
+
+    var HUB_Logo_height = {
+      "localhost:3000": "36px",
+      "corporates.app": "24px",
+      "mistic-lights.com": "36px"
+    };
+
+    
+
+    let AppLogo = HUB_Logo[domain];
+    setLogo(AppLogo);
+
+    let AppLogo_D = HUB_Logo_D[domain];
+    setLogo_D(AppLogo_D);
+
+    let AppLogo_height = HUB_Logo_height[domain];
+    setLogo_height(AppLogo_height);
+
+
+  }, []);
+
   return (
     <Fragment>
-      <header
+      <header style={{height: "56px"}}
         className={`topbar-shadow transparent-style white-content ${
           scroll > headerTop ? "is-sticky" : ""
         }`}
       >
         <Container className="wide">
-          <div className="header-content d-flex align-items-center justify-content-between position-relative space-py-mobile-only--30">
+          <div style={{height: "56px"}} className="header-content d-flex align-items-center justify-content-between position-relative space-py-mobile-only--30">
             {/* logo */}
             <div className="header-content__logo d-flex align-items-center space-pr--15">
               <button
@@ -156,14 +203,14 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
               <Link href="/" as={process.env.PUBLIC_URL + "/"}>
                 <a>
                   <img
-                    style={logostyle}
-                    src={branding.logodark}
+                    style={{height: Logo_height}}
+                    src={Logo_D}
                     className="img-fluid dark-logo"
                     alt=""
                   />
                   <img
-                    style={logostyle}
-                    src={branding.logo}
+                    style={{height: Logo_height}}
+                    src={Logo}
                     className="img-fluid white-logo"
                     alt=""
                   />
@@ -215,13 +262,20 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
                 <li >
                 <button
                     onClick={() => {
+                      if(AppState == "App Closed") setAppState("App Opened");
+                      if(AppState == "App Opened") setAppState("App Closed");
+
+                      if(ProfileState == "Profile Closed") setProfileState("Profile Opened");
+                      if(ProfileState == "Profile Opened") setProfileState("Profile Closed");
+                      /*
                       setOffCanvasCartActive(true);
                       document
                         .querySelector("body")
                         .classList.add("overflow-hidden");
+                        */
                     }}
                   >
-                  <a style={{background:"blue", width:"40px", height:"40px", "borderRadius": "5em"}}>
+                  <a style={{background:"grey", width:"32px", height:"32px", "borderRadius": "5em"}}>
                     <StyledBadge
                       overlap="circle"
                       anchorOrigin={{
@@ -230,7 +284,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems }) => {
                       }}
                       variant="dot"
                     >
-                      <Avatar alt="Aminata Cruickshank" src="/static/images/avatar/1.jpg" />
+                      <Avatar alt="Guest Profile" src="" style={{width: "32px", height: "32px"}}/>
                     </StyledBadge>
                   </a>
                   </button>

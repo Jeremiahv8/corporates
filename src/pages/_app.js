@@ -14,14 +14,14 @@ import "../assets/scss/styles.scss";
 import metadata from "../data/general/meta-data.json";
 import branding from "../data/general/branding.json";
 
+
+
 class MyApp extends App {
   constructor(props) {
     super(props);
     this.persistor = persistStore(props.reduxStore);
     props.reduxStore.dispatch(fetchProducts(products));
   }
-
-
 
   render() {
     const { Component, pageProps, reduxStore } = this.props;

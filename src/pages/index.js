@@ -26,6 +26,9 @@ import branding from "../data/general/branding.json";
 import comingsoon from "../pages/other/coming-soon";
 import emaillogin from "../pages/other/email-login";
 
+import Link from "next/link";
+
+
 let isComingSoon = false;
 let isEmailLogin = true;
 
@@ -50,6 +53,8 @@ const Home = () => {
 
   if(isComingSoon) Base = comingsoon;
   if(isEmailLogin) Base = collection;
+
+  
   return (
     <>
       <Base/>
@@ -67,5 +72,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Home);
-
-
