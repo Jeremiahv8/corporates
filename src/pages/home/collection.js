@@ -30,7 +30,7 @@ import { getProducts } from "../../lib/product";
 import { HeroSliderTwo } from "../../components/HeroSlider";
 import { CategorySlider } from "../../components/Category";
 import { ProductGridWrapper } from "../../components/ProductThumb";
-import categoryData from "../../data/categories/category-one.json";
+import categoryData from "../../data/categories/category-data.json";
 
 
 import { FooterOne } from "../../components/Footer";
@@ -105,9 +105,9 @@ const Collection = () => {
     },
   }))(Badge);
 
+  const [ProfileState, setProfileState] = useState("Profile Closed");
 
   const [AppState, setAppState] = useState("App Opened");
-  const [ProfileState, setProfileState] = useState("Profile Closed");
 
   return (
     <LayoutNine aboutOverlay={false} AppState={AppState} setAppState={setAppState} ProfileState={ProfileState} setProfileState={setProfileState}>
@@ -131,8 +131,8 @@ const Collection = () => {
 
       {/* products */}
       <SectionTitleOne
-        title="Spring summer 2020"
-        subtitle="Find your style. Fall fashion 20xx"
+        title="Mystic Lights"
+        subtitle="Candle collection"
       />
       {/*
       <div className="products-wrapper space-mb--r100">
