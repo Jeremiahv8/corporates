@@ -15,10 +15,10 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
       prevEl: ".swiper-button-prev"
     },
     renderPrevButton: () => (
-      <button className="swiper-button-prev ht-swiper-button-nav"></button>
+      <button style={{background:"rgba(0,0,0,.25)", borderRadius: "5em", boxShadow:"inset 2px 2px 2px rgb(0 0 0 / 50%)"}} className="swiper-button-prev ht-swiper-button-nav"></button>
     ),
     renderNextButton: () => (
-      <button className="swiper-button-next ht-swiper-button-nav"></button>
+      <button style={{background:"rgba(0,0,0,.25)", borderRadius: "5em", boxShadow:"inset 2px 2px 2px rgb(0 0 0 / 50%)"}} className="swiper-button-next ht-swiper-button-nav"></button>
     )
   };
   return (

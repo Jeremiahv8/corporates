@@ -1,58 +1,76 @@
 [
   {
     "id": "1",
-    "image": "/Red",
-    "name": "Ray of Love",
-    "count": 12,
-    "url": "Lavander + Saige"
+    "image": "https://filemanager.aegeantt.com/cdn/MysticLights/NudeCandle.png",
+    "name": "Naked Candles",
+    "count": 1,
+    "url": "/blog/naked-candles",
+    "info": "Naked/Nude/Virgin"
   },
   {
     "id": "2",
-    "image": "/yellow",
-    "name": "Sunshine Love",
-    "count": 23,
-    "url": "/shop/left-sidebar"
+    "image": "https://filemanager.aegeantt.com/cdn/MysticLights/MasculineCandle.png",
+    "name": "Earth Strong Candles",
+    "count": 1,
+    "url": "/blog/earth-candles",
+    "info": "Cadamond/Woody Leather"
+
   },
   {
     "id": "3",
-    "image": "/red",
-    "name": "Hearth of Love",
-    "count": 13,
-    "url": "/shop/left-sidebar"
+    "image": "https://filemanager.aegeantt.com/cdn/MysticLights/ComingSoon.png",
+    "name": "Upcoming candles",
+    "count": 7,
+    "url": "/blog/new-candles",
+    "info": "New Candles"
   },
   {
     "id": "4",
-    "image": "/brown",
-    "name": "Earth Strong",
-    "count": 40,
-    "url": "Cadamond/Woody Leather "
+    "image": "/WhiteImg",
+    "name": "Love Candles",
+    "count": 0,
+    "url": "/blog/ray-of-love"
   },
   {
     "id": "5",
-    "image": "/green",
-    "name": "Nature Bloom",
-    "count": 10,
+    "image": "/YellowImg",
+    "name": "Sunshine Love",
+    "count": 0,
     "url": "/shop/left-sidebar"
   },
   {
     "id": "6",
-    "image": "/black",
-    "name": "Midnight Love",
-    "count": 10,
+    "image": "/red",
+    "name": "Hearth of Love",
+    "count": 0,
     "url": "/shop/left-sidebar"
   },
   {
     "id": "7",
-    "image": "/blue",
-    "name": "Male Love",
-    "count": 10,
+    "image": "/green",
+    "name": "Nature Bloom",
+    "count": 0,
     "url": "/shop/left-sidebar"
   },
   {
     "id": "8",
+    "image": "/black",
+    "name": "Midnight Love",
+    "count": 0,
+    "url": "/shop/left-sidebar"
+  },
+  {
+    "id": "9",
+    "image": "/blue",
+    "name": "Male Love",
+    "count": 0,
+    "url": "/shop/left-sidebar"
+  },
+  {
+    "id": "10",
     "image": "/Pink",
     "name": "Female Love",
-    "count": 10,
+    "count": 0,
     "url": "/shop/left-sidebar"
   }
 ]
