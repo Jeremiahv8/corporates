@@ -1,16 +1,18 @@
 [
   {
     "id": "1",
-    "subtitle": "",
-    "title": "Courier Service",
+    "subtitle": "CANDLE COLLECTION",
+    "title": "Mystic Lights",
     "url": "/shop/left-sidebar",
     "bgImage": "https://filemanager.aegeantt.com/cdn/MysticLights/6d0f4718-75ca-4e16-b95d-9a596890144e.jfif",
+    "Image": "https://filemanager.aegeantt.com/cdn/MysticLights/6d0f4718-75ca-4e16-b95d-9a596890144e.jfif",
     "bgoverlaystyle": {
-      "backgroundColor": "rgba(10,10,150,.25)",
-      "width": "0%",
-      "height": "0%",
+      "backgroundColor": "rgba(0,0,0,.5)",
+      "width": "100%",
+      "height": "100%",
       "position": "absolute",
       "top": "0"
+
     },
     "cardclasses": "align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-end h-100",
     "titlestyle": {
@@ -19,9 +21,9 @@
     "subtitlestyle": {
       "color": "white"
     },
-    "buttontext": "Get Started",
+    "buttontext": "Explore",
     "buttonstyle": {
-      "color": "black",
+      "color": "white",
       "backgroundColor": "white"
     },
     "buttonhoverstyle": {
@@ -30,25 +32,28 @@
   },
   {
     "id": "2",
-    "subtitle": "",
-    "title": "Moving Service",
+    "subtitle": "CANDLE COLLECTION",
+    "title": "Mystic Lights",
     "url": "/shop/left-sidebar",
-    "bgImage": "https://filemanager.aegeantt.com/cdn/UDLVR/Moving%20Service%20-%20Copy.png",
+    "bgImage": "https://filemanager.aegeantt.com/cdn/MysticLights/8ed1341b-7bb2-4433-82c1-e7fa923bd988.jfif",
+    "Image": "https://filemanager.aegeantt.com/cdn/MysticLights/8ed1341b-7bb2-4433-82c1-e7fa923bd988.jfif",
     "bgoverlaystyle": {
-      "backgroundColor": "rgba(10,10,150,.25)",
+      "backgroundColor": "rgba(0,0,0,.5)",
       "width": "100%",
       "height": "100%",
       "position": "absolute",
+      "filter": "brightness(50%)",
       "top": "0"
+
     },
     "cardclasses": "align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-end h-100",
     "titlestyle": {
-      "color": "black"
+      "color": "white"
     },
     "subtitlestyle": {
       "color": "white"
     },
-    "buttontext": "REGISTER",
+    "buttontext": "Explore",
     "buttonstyle": {
       "color": "black",
       "backgroundColor": "white"
@@ -59,16 +64,18 @@
   },
   {
     "id": "3",
-    "subtitle": "",
-    "title": "Skybox Service",
+    "subtitle": "CANDLE COLLECTION",
+    "title": "Mystic Lights",
     "url": "/shop/left-sidebar",
-    "bgImage": "https://filemanager.aegeantt.com/cdn/UDLVR/Skybox%20Service%20-%20Copy.png",
+    "bgImage": "https://filemanager.aegeantt.com/cdn/MysticLights/233f8d83-8c3d-44b6-9d9f-19fb16ec6e94.jfif",
+    "Image": "https://filemanager.aegeantt.com/cdn/MysticLights/233f8d83-8c3d-44b6-9d9f-19fb16ec6e94.jfif",
     "bgoverlaystyle": {
-      "backgroundColor": "rgba(10,10,150,.25)",
-      "width": "100%",
-      "height": "100%",
+      "backgroundColor": "rgba(0,0,0,.5)",
       "position": "absolute",
-      "top": "0"
+      "top": "0",
+      "filter": "brightness(50%)",
+      "width": "100%",
+      "height": "100%"
     },
     "cardclasses": "align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-end h-100",
     "titlestyle": {
@@ -77,9 +84,9 @@
     "subtitlestyle": {
       "color": "white"
     },
-    "buttontext": "REGISTER",
+    "buttontext": "Explore",
     "buttonstyle": {
-      "color": "black",
+      "color": "white",
       "backgroundColor": "white"
     },
     "buttonhoverstyle": {

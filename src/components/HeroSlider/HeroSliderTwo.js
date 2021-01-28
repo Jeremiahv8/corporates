@@ -33,19 +33,25 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
                 <div
 
                   className="hero-slider-two__slide"
-                  style={{ backgroundImage: `url(${single.bgImage})` }}
+                  style={{  }}
                   key={i}
                 >
+                  <div style={{backgroundImage: `url(${single.bgImage})`, filter:"blur(5px)", backgroundSize:"cover", backgroundPosition:"50% 50%", width:"150%", height:"100%" }}></div>
+
+                  <div className="hero-overlay" style={single["bgoverlaystyle"]}></div>
+
                   <div className="hero-slider-two__image">
                     <img
-                      src={process.env.PUBLIC_URL + single.image}
+                      src={process.env.PUBLIC_URL + single.Image}
                       alt=""
                       className="img-fluid"
+                      style={{width:"500px", height: "auto", marginRight: "10px"}}
                     />
                   </div>
                   <div className="hero-slider-two__content">
-                    <h5 className="sub-title">{single.subtitle}</h5>
+                    <h5 style={single["subtitlestyle"]} className="sub-title">{single.subtitle}</h5>
                     <h1
+                      style={single["titlestyle"]}
                       className="title"
                       dangerouslySetInnerHTML={{ __html: single.title }}
                     />
@@ -55,7 +61,7 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
                         as={process.env.PUBLIC_URL + single.url}
                       >
                         <a className="lezada-button lezada-button--medium">
-                          shop now
+                          {single.buttontext}
                         </a>
                       </Link>
                     </div>

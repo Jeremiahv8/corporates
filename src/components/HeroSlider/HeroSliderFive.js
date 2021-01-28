@@ -43,7 +43,7 @@ const HeroSliderFive = ({ sliderData, spaceBottomClass }) => {
                 return (                  
                   <div
                     className="hero-slider-five__slide bg-img"
-                    style={{ backgroundImage: `url(${single.bgImage})` }}
+                    style={{ backgroundImage: `url(${single.bgImage})`, filter: "blur(50%)" }}
                     key={i}
                   >
                     <div className="hero-overlay" style={single["bgoverlaystyle"]}></div>

@@ -25,6 +25,7 @@
   animation-duration: .15s;
   animation-name: CloseApp;
     
+  pointer-events: none;
 }
 @keyframes CloseApp {
   0% {
@@ -45,6 +46,9 @@
   opacity: 1;
   animation-duration: .3s;
   animation-name: OpenApp;
+
+  pointer-events: auto;
+
 }
 @keyframes OpenApp {
   0% {
@@ -71,6 +75,9 @@
   animation-name: CloseProfile;
 
   z-index: 0;
+
+  pointer-events: none;
+
     
 }
 @keyframes CloseProfile {
@@ -102,9 +109,10 @@
   opacity: 1;
   animation-duration: .15s;
   animation-name: OpenProfile;
-
   z-index: 1;
   
+  pointer-events: auto;
+
 }
 @keyframes OpenProfile {
   0% {
