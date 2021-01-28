@@ -69,8 +69,8 @@ const CategorySlider = ({ categoryData, spaceBottomClass }) => {
                       <div className="single-category__content single-category__content--two space-mt--25">
                         <div className="title">
                           <Link
-                            href="/shop/left-sidebar"
-                            as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
+                            href={single.url}
+                            as={process.env.PUBLIC_URL + single.url}
                           >
                             <a>{single.name}</a>
                           </Link>
@@ -78,8 +78,8 @@ const CategorySlider = ({ categoryData, spaceBottomClass }) => {
                         <p className="product-count">{single.count}</p>
                       </div>
                       <Link
-                        href="/shop/left-sidebar"
-                        as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
+                        href={single.url}
+                        as={process.env.PUBLIC_URL + single.url}
                       >
                         <a className="banner-link"></a>
                       </Link>
