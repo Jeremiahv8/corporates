@@ -146,18 +146,18 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
     var HUB_Logo = {
       "localhost:3000": "https://filemanager.aegeantt.com/cdn/MysticLights/light%20logo_210122153708.png",
       "corporates.app": "",
-      "mistic-lights.com": "https://filemanager.aegeantt.com/cdn/MysticLights/light%20logo_210122153708.png"
+      "mystic-lights.com": "https://filemanager.aegeantt.com/cdn/MysticLights/light%20logo_210122153708.png"
     };
     var HUB_Logo_D = {
       "localhost:3000": "https://filemanager.aegeantt.com/cdn/MysticLights/dark%20logo.png",
       "corporates.app": "",
-      "mistic-lights.com": "https://filemanager.aegeantt.com/cdn/MysticLights/dark%20logo.png"
+      "mystic-lights.com": "https://filemanager.aegeantt.com/cdn/MysticLights/dark%20logo.png"
     };
 
     var HUB_Logo_height = {
       "localhost:3000": "36px",
       "corporates.app": "24px",
-      "mistic-lights.com": "36px"
+      "mystic-lights.com": "36px"
     };
 
     

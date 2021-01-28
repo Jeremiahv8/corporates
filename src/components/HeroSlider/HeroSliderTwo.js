@@ -31,8 +31,9 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
             sliderData.map((single, i) => {
               return (
                 <div
+
                   className="hero-slider-two__slide"
-                  style={{ backgroundColor: single.bgColor }}
+                  style={{ backgroundImage: `url(${single.bgImage})` }}
                   key={i}
                 >
                   <div className="hero-slider-two__image">
