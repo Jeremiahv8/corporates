@@ -224,6 +224,18 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
             {/* icons */}
             <div className="header-content__icons space-pl--15">
               <ul className="d-none d-lg-block">
+              <li>
+                  <button
+                    onClick={() => {
+                      setOffCanvasSearchActive(true);
+                      document
+                        .querySelector("body")
+                        .classList.add("overflow-hidden");
+                    }}
+                  >
+                    <IoIosSearch />
+                  </button>
+                </li>
                 
                 <li >
                   <button

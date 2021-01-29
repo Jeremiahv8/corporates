@@ -112,6 +112,8 @@ const Collection = () => {
   return (
     <LayoutNine aboutOverlay={false} AppState={AppState} setAppState={setAppState} ProfileState={ProfileState} setProfileState={setProfileState}>
 
+      
+
       <div className={AppState} style={{background:"white" , width:"100%", height:"auto"}}>
         <div style={{display: "none", height: "1500px", width: "200px", background: "yellow", backgroundImage: "url('https://www.thephoblographer.com/wp-content/uploads/2018/09/Chris-Gampat-The-Phoblographer-Canon-RF-50mm-f1.2-L-USM-sample-images-in-Hawaii-45-770x1155.jpg')"}}></div>
         
