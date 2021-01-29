@@ -76,12 +76,14 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
                       <div className="blog-grid-post" key={i}>
                         <div className="blog-grid-post__image space-mb--30">
                           <Link
-                            href={single.url}
-                            as={process.env.PUBLIC_URL + single.url}
+                            href={`/blog/[slug]?slug=${single.slug}`}
+                            as={
+                              process.env.PUBLIC_URL + "/blog/" + single.slug
+                            }
                           >
                             <a>
                               <img
-                                src={process.env.PUBLIC_URL + single.image}
+                                src={process.env.PUBLIC_URL + single.thumbImage[0]}
                                 className="img-fluid"
                                 alt=""
                               />

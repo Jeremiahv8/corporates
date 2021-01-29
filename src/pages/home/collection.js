@@ -9,8 +9,8 @@ import { SectionTitleOne } from "../../components/SectionTitle";
 import { HeroSliderSeven } from "../../components/HeroSlider";
 import { CategoryGridThree } from "../../components/Category";
 import { CountdownTimerOne } from "../../components/Countdown";
-import blogData from "../../data/blog-posts/blog-post-one.json";
-//import blogData from "../../data/products.json";
+//import blogData from "../../data/blog-posts/blog-post-one.json";
+import blogData from "../../data/products.json";
 
 import heroSliderData from "../../data/hero-sliders/hero-slider-data.json";
 import { yellow } from "@material-ui/core/colors";
@@ -131,8 +131,8 @@ const Collection = () => {
 
       {/* products */}
       <SectionTitleOne
-        title="Mystic Lights"
-        subtitle="Candle collection"
+        title="Handcrafted Candles"
+        subtitle="Made in Colorado"
       />
       {/*
       <div className="products-wrapper space-mb--r100">

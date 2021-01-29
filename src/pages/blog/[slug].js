@@ -54,7 +54,7 @@ const PostRightSidebar = ({
   //const PostRightSidebar = () => {
   return (
     <LayoutNine aboutOverlay={false} >
-      <div className="blog-page-wrapper space-mb--r130 space-mt--r130">
+      <div style={{background: "white", paddingTop: "24px", marginTop: "56px"}} className="blog-page-wrapper space-mb--r130 space-mt--r130">
         <Container>
           <Row>
             <Col lg={3} className="order-2 space-mt-mobile-only--50">
@@ -79,21 +79,17 @@ const PostRightSidebar = ({
                         process.env.PUBLIC_URL + "/blog/standard-left-sidebar"
                       }
                     >
-                      <a>{product.name}</a>
+                      <a>{product.category[0]}</a>
                     </Link>
                   </div>
-                  <h2 className="post-title">Chic Fashion Phenomenon</h2>
+                  <h2 className="post-title">{product.name}</h2>
 
                   <div className="post-info d-flex flex-wrap align-items-center space-mb--50">
                     <div className="post-user">
                       <IoIosPerson /> By
                       <Link
-                        href="/blog/standard-left-sidebar"
-                        as={
-                          process.env.PUBLIC_URL + "/blog/standard-left-sidebar"
-                        }
                       >
-                        <a> Owen Christ</a>
+                        <a> {" "+ product.by}</a>
                       </Link>
                     </div>
                     <div className="post-date mb-0 space-pl--30">
@@ -124,41 +120,15 @@ const PostRightSidebar = ({
                   </div>
 
                   <div className="single-blog-post-section">
-                    <h3 className="space-mb--30">Sequins</h3>
+                    <h3 className="space-mb--30">Vessel</h3>
                     <p className="space-mb--30">
-                      To say sequins and sparkles will be a big deal next summer
-                      is an understatement. In every fashion capital, glitter
-                      prevailed, starting with Tom Ford and Marc Jacobs right
-                      through to Gucci (pictured here), Dior and Chanel. Style
-                      yours with a sweatshirt to give them daytime longevity.
+                      {product.shortDescription}
                     </p>
-                    <h3 className="space-mb--30">Pastels</h3>
+                    <h3 className="space-mb--30">Core</h3>
                     <p className="space-mb--30">
-                      Whether lilac, pink, lemon or duck egg blue, expect to see
-                      an array of fashion’s prettiest shades next season. But as
-                      Victoria Beckham (pictured) said “delicacy can be strong”;
-                      saccharine these colours are not – consider tailoring in
-                      ice cream hues or wearing them in unexpected ways like at
-                      Celine.
+                      {product.fullDescription}
                     </p>
-                    <h3 className="space-mb--30">Checks</h3>
-                    <p className="space-mb--30">
-                      It looks as if heritage checks are going nowhere for the
-                      season ahead. Balenciaga’s came via voluminous coats as
-                      seen here, while Victoria Beckham’s had a more traditional
-                      appeal. Anyone looking for floaty feminine styles should
-                      turn to Sonia Rykiel where they were bright and
-                      summer-ready. Burberry’s homage was perhaps the most overt
-                      – expect to see its check caps everywhere next season.
-                    </p>
-                    <h3 className="space-mb--30">Plastic</h3>
-                    <p className="space-mb--30">
-                      Perfect for British summers, waterproof plastics were a
-                      predominant look for spring/summer 2020. As seen at Chanel
-                      (pictured), Isabel, Marant, Burberry, Topshop, Calvin
-                      Klein and Fendi, plastic in varying shades will be
-                      everywhere in 12 months time.
-                    </p>
+                    
                   </div>
 
                   <Row className="space-mt--30 align-items-center">

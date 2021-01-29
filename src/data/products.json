@@ -1,6 +1,8 @@
 [
   {
     "id": "0",
+    "by": "UDLVR",
+    "domain": "https://udlvr.com",
     "sku": "asdf111",
     "name": "Delivery Service",
     "slug": "delivery-service",
@@ -40,6 +42,8 @@
   },
   {
     "id": "0",
+    "by": "Mystic Lights",
+    "domain": "https://mystic-lights.com",
     "sku": "asdf111",
     "name": "The Snow White Pinapple Vessel",
     "slug": "the-snow-white-pinapple-vessel",
@@ -53,7 +57,7 @@
     "maxstops": 10,
     "isservice": true,
     "category": [
-      "service"
+      "candles"
     ],
     "tag": [
       "delivery",
@@ -77,6 +81,8 @@
   },
   {
     "id": "0",
+    "by": "Plant Heaven",
+    "domain": "https://plant-heaven.com",
     "sku": "asdf111",
     "name": "Cannabaceae Martinov Flower",
     "slug": "cannabaceae-martinov-flower",
