@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "subtitle": "CANDLE COLLECTION",
-    "title": "Mystic Lights",
-    "url": "/shop/left-sidebar",
+    "subtitle": "COPPER GOLD COLLECTION",
+    "title": "Romance Stone",
+    "url": "/blog/the-snow-white-pinapple-vessel",
     "bgImage": "https://filemanager.aegeantt.com/cdn/MysticLights/6d0f4718-75ca-4e16-b95d-9a596890144e.jfif",
     "Image": "https://filemanager.aegeantt.com/cdn/MysticLights/6d0f4718-75ca-4e16-b95d-9a596890144e.jfif",
     "bgoverlaystyle": {
@@ -31,42 +31,10 @@
     }
   },
   {
-    "id": "2",
-    "subtitle": "CANDLE COLLECTION",
-    "title": "Mystic Lights",
-    "url": "/shop/left-sidebar",
-    "bgImage": "https://filemanager.aegeantt.com/cdn/MysticLights/8ed1341b-7bb2-4433-82c1-e7fa923bd988.jfif",
-    "Image": "https://filemanager.aegeantt.com/cdn/MysticLights/8ed1341b-7bb2-4433-82c1-e7fa923bd988.jfif",
-    "bgoverlaystyle": {
-      "backgroundColor": "rgba(0,0,0,.5)",
-      "width": "100%",
-      "height": "100%",
-      "position": "absolute",
-      "filter": "brightness(50%)",
-      "top": "0"
-
-    },
-    "cardclasses": "align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-end h-100",
-    "titlestyle": {
-      "color": "white"
-    },
-    "subtitlestyle": {
-      "color": "white"
-    },
-    "buttontext": "Explore",
-    "buttonstyle": {
-      "color": "black",
-      "backgroundColor": "white"
-    },
-    "buttonhoverstyle": {
-      "backgroundColor" : "red"
-    }
-  },
-  {
     "id": "3",
-    "subtitle": "CANDLE COLLECTION",
-    "title": "Mystic Lights",
-    "url": "/shop/left-sidebar",
+    "subtitle": "SHOW WHITE COLLECTION",
+    "title": "Unscented Candles",
+    "url": "/blog/the-snow-white-pinapple-vessel",
     "bgImage": "https://filemanager.aegeantt.com/cdn/MysticLights/233f8d83-8c3d-44b6-9d9f-19fb16ec6e94.jfif",
     "Image": "https://filemanager.aegeantt.com/cdn/MysticLights/233f8d83-8c3d-44b6-9d9f-19fb16ec6e94.jfif",
     "bgoverlaystyle": {
@@ -87,6 +55,37 @@
     "buttontext": "Explore",
     "buttonstyle": {
       "color": "white",
+      "backgroundColor": "white"
+    },
+    "buttonhoverstyle": {
+      "backgroundColor" : "red"
+    }
+  },
+  {
+    "id": "2",
+    "subtitle": "COPPER GOLD COLLECTION",
+    "title": "Cardamon Scent",
+    "url": "/blog/the-snow-white-pinapple-vessel",
+    "bgImage": "https://filemanager.aegeantt.com/cdn/MysticLights/8ed1341b-7bb2-4433-82c1-e7fa923bd988.jfif",
+    "Image": "https://filemanager.aegeantt.com/cdn/MysticLights/8ed1341b-7bb2-4433-82c1-e7fa923bd988.jfif",
+    "bgoverlaystyle": {
+      "backgroundColor": "rgba(0,0,0,.5)",
+      "width": "100%",
+      "height": "100%",
+      "position": "absolute",
+      "filter": "brightness(50%)",
+      "top": "0"
+    },
+    "cardclasses": "align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-end h-100",
+    "titlestyle": {
+      "color": "white"
+    },
+    "subtitlestyle": {
+      "color": "white"
+    },
+    "buttontext": "Explore",
+    "buttonstyle": {
+      "color": "black",
       "backgroundColor": "white"
     },
     "buttonhoverstyle": {

@@ -237,6 +237,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </button>
                 </li>
                 
+                {/*
                 <li >
                   <button
                     onClick={() => {
@@ -253,7 +254,6 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                     </IconButton>
                   </button>
                 </li>
-                
                 <li >
                   <button
                     onClick={() => {
@@ -270,7 +270,6 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                     </IconButton>
                   </button>
                 </li>
-
                 <li >
                 <button
                     onClick={() => {
@@ -279,12 +278,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
 
                       if(ProfileState == "Profile Closed") setProfileState("Profile Opened");
                       if(ProfileState == "Profile Opened") setProfileState("Profile Closed");
-                      /*
-                      setOffCanvasCartActive(true);
-                      document
-                        .querySelector("body")
-                        .classList.add("overflow-hidden");
-                        */
+                      
                     }}
                   >
                   <a style={{background:"grey", width:"32px", height:"32px", "borderRadius": "5em"}}>
@@ -301,7 +295,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </a>
                   </button>
                 </li>
-
+                  */}
               </ul>
 
 

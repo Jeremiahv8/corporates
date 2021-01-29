@@ -10,6 +10,8 @@ import { HeroSliderSeven } from "../../components/HeroSlider";
 import { CategoryGridThree } from "../../components/Category";
 import { CountdownTimerOne } from "../../components/Countdown";
 import blogData from "../../data/blog-posts/blog-post-one.json";
+//import blogData from "../../data/products.json";
+
 import heroSliderData from "../../data/hero-sliders/hero-slider-data.json";
 import { yellow } from "@material-ui/core/colors";
 
@@ -112,13 +114,9 @@ const Collection = () => {
   return (
     <LayoutNine aboutOverlay={false} AppState={AppState} setAppState={setAppState} ProfileState={ProfileState} setProfileState={setProfileState}>
 
-      
-
       <div className={AppState} style={{background:"white" , width:"100%", height:"auto"}}>
         <div style={{display: "none", height: "1500px", width: "200px", background: "yellow", backgroundImage: "url('https://www.thephoblographer.com/wp-content/uploads/2018/09/Chris-Gampat-The-Phoblographer-Canon-RF-50mm-f1.2-L-USM-sample-images-in-Hawaii-45-770x1155.jpg')"}}></div>
         
-        
-
 
         {/* hero slider */}
       <HeroSliderTwo
@@ -168,11 +166,10 @@ const Collection = () => {
       <FooterOne />
       </div>
 
-      <div className={ProfileState} style={{background: "purple", position: "fixed", width:"100vw", height:"100vh", top: "0"}}>
+
+      <div className={ProfileState} style={{display: "none", background: "purple", position: "fixed", width:"100vw", height:"100vh", top: "0"}}>
         <div className="ProfileContainer" style={{height: "100%", width: "100%", position: "relative", background: "blue"}}>
-
           <div style={{width:"100%", height:"200px", background: "rgb(50,50,50)"}}></div>
-
           <div style={{display:"flex"}} >
             <div style={{width:"50%", height:"112px", background: "rgb(50,50,50)", display: "flex", padding: "14px", paddingLeft:"56px", paddingRight:"56px", borderTop: "1px solid rgb(75,75,75)"}}>
               <div style={{width: "80px", height: "80px", borderRadius: "5em"}}>
@@ -187,17 +184,12 @@ const Collection = () => {
                 </div>
               </div>
             </div>
-
             <div style={{width:"50%", height:"112px", background: "rgb(50,50,50)", display: "flex", padding: "14px", paddingLeft:"56px", paddingRight:"56px", borderTop: "1px solid rgb(75,75,75)", justifyContent: "flex-end"}}>
               <div style={{border:"1px solid rgb(150,150,150)", margin: "auto 0", padding: "10px", paddingLeft: "20px", paddingRight: "20px", width: "auto", height: "auto", marginLeft:"14px", fontSize: "14px", color:"rgb(150,150,150)"}}>
               FOLLOW
               </div>
             </div>
-
           </div>
-
-        
-
         </div>
       </div>
 

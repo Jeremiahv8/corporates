@@ -54,10 +54,10 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
         <Row className="align-items-center">
           <Col lg={4}>
             <div className="blog-intro space-mb-mobile-only--30">
-              <h2>From our blog</h2>
+              <h2> From our blog</h2>
               <p>
-                Lorem ipsum dolor sit amet, consecte tur cing elit. Suspe ndisse
-                suscipit sagittis leo sit met condim entum.
+                Learn more about our Candles, Collections and 
+                most importantly about us
               </p>
               <Link
                 href="/blog/standard-left-sidebar"

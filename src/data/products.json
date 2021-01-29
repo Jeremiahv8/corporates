@@ -30,7 +30,50 @@
       "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
     ],
     "shortDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
-    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs."
+    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
+    "IsLog": true,
+    "title": "The Snow White Pinapple Vessel",
+    "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
+    "url": "/blog/post-left-sidebar",
+    "date": "june 5, 2020"
+  
+  },
+  {
+    "id": "0",
+    "sku": "asdf111",
+    "name": "The Snow White Pinapple Vessel",
+    "slug": "the-snow-white-pinapple-vessel",
+    "price": 20,
+    "discount": 0,
+    "new": true,
+    "rating": 0,
+    "ratingCount": 0,
+    "saleCount": 0,
+    "multistop": true,
+    "maxstops": 10,
+    "isservice": true,
+    "category": [
+      "service"
+    ],
+    "tag": [
+      "delivery",
+      "transport"
+    ],
+    "stock": 10,
+    "thumbImage": [
+      "https://filemanager.aegeantt.com/cdn/MysticLights/Unscented.png",
+      "https://filemanager.aegeantt.com/cdn/MysticLights/Snow%20White%20Blog.png"
+    ],
+    "image": [
+    ],
+    "shortDescription": "In the Snow White Pineapple Vessel is an unscented candle ... however, while unscented the soft scent of coconut is present ... this is a perfect candle for the dinner table!",
+    "fullDescription": "This is finished with a tiny Rose Quartz & a shimmer of Peal Mika Powder. The Rose Quartz is a Romance stone and works in the Heart Chakra. It brings Calm & Peace, Love & Compassion, adds Loving energy to relationships.",
+    "IsLog": true,
+    "title": "The Snow White Pinapple Vessel",
+    "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
+    "url": "/blog/post-left-sidebar",
+    "date": "june 5, 2020"
+  
   },
   {
     "id": "0",
@@ -63,40 +106,13 @@
       "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
     ],
     "shortDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
-    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs."
-  },
-  {
-    "id": "0",
-    "sku": "asdf111",
-    "name": "Cannabaceae Martinov Flower",
-    "slug": "cannabaceae-martinov-flower",
-    "price": 20,
-    "discount": 0,
-    "new": true,
-    "rating": 0,
-    "ratingCount": 0,
-    "saleCount": 0,
-    "multistop": true,
-    "maxstops": 10,
-    "isservice": true,
-    "category": [
-      "service"
-    ],
-    "tag": [
-      "delivery",
-      "transport"
-    ],
-    "stock": 10,
-    "thumbImage": [
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
-    ],
-    "image": [
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
-    ],
-    "shortDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
-    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs."
+    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
+    "IsLog": true,
+    "title": "The Snow White Pinapple Vessel",
+    "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
+    "url": "/blog/post-left-sidebar",
+    "date": "june 5, 2020"
+  
   }
 
 
