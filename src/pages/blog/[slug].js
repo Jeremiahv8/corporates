@@ -88,7 +88,10 @@ const PostRightSidebar = ({
                     <div className="post-user">
                       <IoIosPerson /> By
                       <Link
-                      >
+                          href={`/blog/[slug]?slug=${product.slug}`}
+                          as={
+                            process.env.PUBLIC_URL + "/blog/" + product.slug
+                          }                      >
                         <a> {" "+ product.by}</a>
                       </Link>
                     </div>

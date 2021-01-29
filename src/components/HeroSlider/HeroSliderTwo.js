@@ -57,8 +57,10 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
                     />
                     <div className="slider-link">
                       <Link
-                        href={single.url}
-                        as={process.env.PUBLIC_URL + single.url}
+                        href={`/blog/[slug]?slug=${single.slug}`}
+                        as={
+                          process.env.PUBLIC_URL + "/blog/" + single.slug
+                        }
                       >
                         <a className="lezada-button lezada-button--medium">
                           {single.buttontext}
