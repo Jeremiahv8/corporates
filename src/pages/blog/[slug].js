@@ -51,6 +51,8 @@ const PostRightSidebar = ({
     (compareItem) => compareItem.id === product.id
   )[0];
 
+  console.log(product.followers);
+  console.log(product.posts);
   //const PostRightSidebar = () => {
   return (
     <LayoutNine aboutOverlay={false} >
@@ -82,19 +84,20 @@ const PostRightSidebar = ({
                       <a>{product.category[0]}</a>
                     </Link>
                   </div>
-                  <h2 className="post-title">{product.name}</h2>
+                  <h2 className="post-title">{" "+ product.name}</h2>
 
                   <div className="post-info d-flex flex-wrap align-items-center space-mb--50">
                     <div className="post-user">
-                      <IoIosPerson /> By
+                      <IoIosPerson /> 
                       <Link
-                          href={`/blog/[slug]?slug=${product.slug}`}
+                          href={`//mystic-lights.com`}
                           as={
-                            process.env.PUBLIC_URL + "/blog/" + product.slug
+                            "//mystic-lights.com"
                           }                      >
                         <a> {" "+ product.by}</a>
                       </Link>
                     </div>
+                    {/*
                     <div className="post-date mb-0 space-pl--30">
                       <IoIosCalendar />
                       <Link
@@ -106,6 +109,7 @@ const PostRightSidebar = ({
                         <a>june 5, 2020</a>
                       </Link>
                     </div>
+                    
                     <div className="post-category space-pl--30">
                       <Link
                         href="/blog/standard-left-sidebar"
@@ -120,6 +124,7 @@ const PostRightSidebar = ({
                       <IoMdChatbubbles />
                       <a href="#"> 4 Comments</a>
                     </div>
+                    */}
                   </div>
 
                   <div className="single-blog-post-section">
@@ -135,43 +140,22 @@ const PostRightSidebar = ({
                   </div>
 
                   <Row className="space-mt--30 align-items-center">
+                    
                     <Col md={6} className="text-center text-md-left">
                       <div className="post-tags">
                         <IoMdPricetags />
                         <ul className="tag-list">
                           <li>
-                            <a href="#">accessories</a>,
+                            <a href="#">Unscented Candels</a>,
                           </li>
                           <li>
-                            <a href="#">clothes</a>,
+                            <a href="#">Naked Candels</a>,
                           </li>
-                          <li>
-                            <a href="#">fashion</a>,
-                          </li>
-                          <li>
-                            <a href="#">greenspace</a>,
-                          </li>
-                          <li>
-                            <a href="#">Instagram</a>,
-                          </li>
-                          <li>
-                            <a href="#">Interior</a>,
-                          </li>
-                          <li>
-                            <a href="#">lezada</a>,
-                          </li>
-                          <li>
-                            <a href="#">lifestyle</a>,
-                          </li>
-                          <li>
-                            <a href="#">shop</a>,
-                          </li>
-                          <li>
-                            <a href="#">stores</a>
-                          </li>
+                          
                         </ul>
                       </div>
                     </Col>
+                    
                     <Col md={6} className="text-center text-md-right">
                       <div className="post-share">
                         <span>Share this post:</span>
@@ -181,6 +165,7 @@ const PostRightSidebar = ({
                               <IoLogoFacebook />
                             </a>
                           </li>
+                          {/*
                           <li>
                             <a href="#">
                               <IoLogoTwitter />
@@ -196,6 +181,7 @@ const PostRightSidebar = ({
                               <IoLogoPinterest />
                             </a>
                           </li>
+                          */}
                         </ul>
                       </div>
                     </Col>
@@ -213,129 +199,51 @@ const PostRightSidebar = ({
                   />
                 </div>
                 <div className="single-author__content">
-                  <p className="username">Edna Watson</p>
-                  <p className="message">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laboruLorem
-                    ipsum dolor sit amet datat non proident
+                  <p style={{marginTop:"10px"}} className="username">{product.by}</p>
+                  <p style={{marginTop:"-20px"}} className="message">
+                    1 Followers
                   </p>
                 </div>
+                <div class="Slim" style={{cursor: "pointer", background: "white", verticalAlign: "middle", margin: "auto", padding: "10px"}}>Follow</div>
+
               </div>
               <div className="comments-wrapper space-mb--40">
                 <h2 className="comment-title space-mb--30">
-                  Comments <span>(4)</span>
+                  Posts <span>({product["posts"].length})</span>
                 </h2>
 
-                <div className="single-comment">
-                  <div className="single-comment__image">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/images/user/user1.jpeg"
-                      }
-                      className="img-fluid"
-                      alt=""
-                    />
+                {product.posts.map(function(item, count) {
+                  return<div className="single-comment">
+                    <div className="single-comment__image">
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          "/assets/images/user/user1.jpeg"
+                        }
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div className="single-comment__content">
+                      <p className="username">
+                        {item.firstname +" "+ item.lastname} <span className="date">/ April 5, 2020</span>
+                      </p>
+
+                      <p className="message">
+                        Thanks for always keeping your WordPress themes up to
+                        date. Your level of support and dedication is second to
+                        none.
+                      </p>
+
+                      <a href="#" className="reply-link">
+                        <IoIosRedo /> reply
+                      </a>
+                    </div>
                   </div>
-                  <div className="single-comment__content">
-                    <p className="username">
-                      Scott James <span className="date">/ April 5, 2020</span>
-                    </p>
+                })}
+                
 
-                    <p className="message">
-                      Thanks for always keeping your WordPress themes up to
-                      date. Your level of support and dedication is second to
-                      none.
-                    </p>
-
-                    <a href="#" className="reply-link">
-                      <IoIosRedo /> reply
-                    </a>
-                  </div>
-                </div>
-                <div className="single-comment">
-                  <div className="single-comment__image">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/images/user/user2.jpeg"
-                      }
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div className="single-comment__content">
-                    <p className="username">
-                      Edna Watson <span className="date">/ April 5, 2020</span>
-                    </p>
-
-                    <p className="message">
-                      Thanks for always keeping your WordPress themes up to
-                      date. Your level of support and dedication is second to
-                      none.
-                    </p>
-
-                    <a href="#" className="reply-link">
-                      <IoIosRedo /> reply
-                    </a>
-                  </div>
-                </div>
-
-                <div className="single-comment">
-                  <div className="single-comment__image">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/images/user/user3.jpeg"
-                      }
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div className="single-comment__content">
-                    <p className="username">
-                      Owen Christ <span className="date">/ April 5, 2020</span>
-                    </p>
-
-                    <p className="message">
-                      Thanks for always keeping your WordPress themes up to
-                      date. Your level of support and dedication is second to
-                      none.
-                    </p>
-
-                    <a href="#" className="reply-link">
-                      <IoIosRedo /> reply
-                    </a>
-                  </div>
-                </div>
-
-                <div className="single-comment single-comment--reply">
-                  <div className="single-comment__image">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL +
-                        "/assets/images/user/user1.jpeg"
-                      }
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div className="single-comment__content">
-                    <p className="username">
-                      Scott James <span className="date">/ April 5, 2020</span>
-                    </p>
-
-                    <p className="message">
-                      Thanks for always keeping your WordPress themes up to
-                      date. Your level of support and dedication is second to
-                      none.
-                    </p>
-
-                    <a href="#" className="reply-link">
-                      <IoIosRedo /> reply
-                    </a>
-                  </div>
-                </div>
+                
               </div>
               <div className="comment-form">
                 <div>

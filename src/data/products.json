@@ -37,8 +37,20 @@
     "title": "The Snow White Pinapple Vessel",
     "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
     "url": "/blog/post-left-sidebar",
-    "date": "june 5, 2020"
-  
+    "date": "june 5, 2020",
+    "posts": [
+      {
+        "name": "Marcus Redding",
+        "picture": "Marcus Redding"
+      }
+    ],
+    "followers": [
+      {
+        "firstname": "Marcus",
+        "lastname": "Redding",
+        "domain": "marcus-redding.com"
+      }
+    ]
   },
   {
     "id": "0",
@@ -76,8 +88,25 @@
     "title": "The Snow White Pinapple Vessel",
     "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
     "url": "/blog/post-left-sidebar",
-    "date": "june 5, 2020"
-  
+    "date": "june 5, 2020",
+    "posts": [
+      {
+        "firstname": "Marcus",
+        "lastname": "Redding",
+        "picture": "MarcusRedding",
+        "domain": "marcus.redding.com",
+        "text": "Mystic Lights create a magical feeling that I cannot explain"
+      },
+      {
+        "firstname": "Lisa",
+        "lastname": "Smith",
+        "picture": "MarcusRedding",
+        "domain": "marcus.redding.com",
+        "text": "Mystic Lights create a magical feeling that I cannot explain"
+      }
+    ],
+    "followers": [
+    ]
   },
   {
     "id": "0",
@@ -117,8 +146,32 @@
     "title": "The Snow White Pinapple Vessel",
     "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
     "url": "/blog/post-left-sidebar",
-    "date": "june 5, 2020"
-  
+    "date": "june 5, 2020",
+    "posts": [
+      {
+        "firstname": "Marcus",
+        "lastname": "Redding",
+        "picture": "MarcusRedding",
+        "domain": "marcus.redding.com",
+        "text": "Mystic Lights create a magical feeling that I cannot explain",
+        "timesince": "30"
+      },
+      {
+        "firstname": "Marcus",
+        "lastname": "Redding",
+        "picture": "MarcusRedding",
+        "domain": "marcus.redding.com",
+        "text": "Mystic Lights create a magical feeling that I cannot explain"
+      }
+    ],
+    "followers": [
+      {
+        "firstname": "Marcus",
+        "lastname": "Redding",
+        "picture": "MarcusRedding",
+        "domain": "marcus-redding.com"
+      }
+    ]
   }
 
 
