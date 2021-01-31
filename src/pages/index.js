@@ -29,8 +29,8 @@ import emaillogin from "../pages/other/email-login";
 import Link from "next/link";
 
 
-let isComingSoon = true;
-let isEmailLogin = false;
+let isComingSoon = false;
+let isEmailLogin = true;
 
 //const Home = ({ newProducts, popularProducts, saleProducts }) => {
 const Home = () => {

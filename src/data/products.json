@@ -1,59 +1,6 @@
 [
   {
     "id": "0",
-    "by": "UDLVR",
-    "domain": "https://udlvr.com",
-    "sku": "asdf111",
-    "name": "Delivery Service",
-    "slug": "delivery-service",
-    "price": 40,
-    "discount": 0,
-    "new": true,
-    "rating": 0,
-    "ratingCount": 0,
-    "saleCount": 0,
-    "multistop": true,
-    "maxstops": 10,
-    "isservice": true,
-    "category": [
-      "service"
-    ],
-    "tag": [
-      "delivery",
-      "transport"
-    ],
-    "stock": 10,
-    "thumbImage": [
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
-    ],
-    "image": [
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
-    ],
-    "shortDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
-    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
-    "IsLog": true,
-    "title": "The Snow White Pinapple Vessel",
-    "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
-    "url": "/blog/post-left-sidebar",
-    "date": "june 5, 2020",
-    "posts": [
-      {
-        "name": "Marcus Redding",
-        "picture": "Marcus Redding"
-      }
-    ],
-    "followers": [
-      {
-        "firstname": "Marcus",
-        "lastname": "Redding",
-        "domain": "marcus-redding.com"
-      }
-    ]
-  },
-  {
-    "id": "0",
     "by": "Mystic Lights",
     "domain": "https://mystic-lights.com",
     "sku": "asdf111",
@@ -86,8 +33,8 @@
     "fullDescription": "This is finished with a tiny Rose Quartz & a shimmer of Peal Mika Powder. The Rose Quartz is a Romance stone and works in the Heart Chakra. It brings Calm & Peace, Love & Compassion, adds Loving energy to relationships.",
     "IsLog": true,
     "title": "The Snow White Pinapple Vessel",
-    "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
-    "url": "/blog/post-left-sidebar",
+    "text": "In the Snow White Pineapple Vessel is an unscented candle ... however, while unscented the soft scent of coconut is present ... this is a perfect candle for the dinner table!",
+    "url": "/blog/the-snow-white-pinapple-vessel",
     "date": "june 5, 2020",
     "posts": [
       {
@@ -107,8 +54,8 @@
     "by": "Plant Heaven",
     "domain": "https://plant-heaven.com",
     "sku": "asdf111",
-    "name": "Cannabaceae Martinov Flower",
-    "slug": "cannabaceae-martinov-flower",
+    "name": "The Copper Gold Pineapple Vessel",
+    "slug": "the-copper-gold-pineapple-vessel",
     "price": 20,
     "discount": 0,
     "new": true,
@@ -127,20 +74,18 @@
     ],
     "stock": 10,
     "thumbImage": [
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
+      "https://filemanager.aegeantt.com/cdn/MysticLights/mysic%20gold.png",
+      "https://filemanager.aegeantt.com/cdn/MysticLights/mysic%20gold%20wide.png"
     ],
     "image": [
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127718384_197998165205609_8229881559731507333_o.jpg",
-      "https://filemanager.aegeantt.com/cdn/UDLVR/127233412_196528992019193_723205260995130032_o.jpg"
     ],
-    "shortDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
-    "fullDescription": "UDLVR is a courier company that delivers smiles and is the final piece of the puzzle for your online shopping needs.",
+    "shortDescription": "In the Copper Gold Pineapple Vessel has a Cardamon scent which gives off a handsomely woody undertone. This is finished with a tiny Citrine stone & a shimmer of Gold Mika Powder.",
+    "fullDescription": "The Citrine Gem is a Creativity stone and works in the Sacral Chakra. It encourages Motivation, Self Expression & Self Improvement.",
     "IsLog": true,
-    "title": "The Snow White Pinapple Vessel",
-    "text": "Michele seemed to say, was the 21st-century Gucci girl, an eccentric, fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of “ugly pretty.",
-    "url": "/blog/post-left-sidebar",
-    "date": "june 5, 2020",
+    "title": "The Copper Gold Pineapple Vessel",
+    "text": "In the Copper Gold Pineapple Vessel has a Cardamon scent which gives off a handsomely woody undertone.",
+    "url": "/blog/the-snow-white-pinapple-vessel",
+    "date": "February 3, 2020",
     "posts": [
       {
         "firstname": "Florance",
