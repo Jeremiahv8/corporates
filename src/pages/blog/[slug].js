@@ -17,7 +17,8 @@ import {
   IoLogoGoogleplus,
   IoLogoPinterest,
   IoMdPricetags,
-  IoIosRedo
+  IoIosRedo,
+  IoIosHeartEmpty
 } from "react-icons/io";
 
 import products from "../../data/products.json";
@@ -51,17 +52,18 @@ const PostRightSidebar = ({
     (compareItem) => compareItem.id === product.id
   )[0];
 
-  console.log(product.followers);
-  console.log(product.posts);
+  //console.log(product.followers);
+  //console.log(product.posts);
   //const PostRightSidebar = () => {
+  
   return (
-    <LayoutNine aboutOverlay={false} >
+  <LayoutNine aboutOverlay={false} >
       <div style={{background: "white", paddingTop: "24px", marginTop: "56px"}} className="blog-page-wrapper space-mb--r130 space-mt--r130">
         <Container>
           <Row>
             <Col lg={3} className="order-2 space-mt-mobile-only--50">
               {/* sidebar */}
-              <BlogSidebar />
+              <BlogSidebar products={products} />
             </Col>
 
             <Col lg={9} className="order-1">
@@ -192,7 +194,7 @@ const PostRightSidebar = ({
                 <div className="single-author__image">
                   <img
                     src={
-                      process.env.PUBLIC_URL + "/assets/images/user/user3.jpeg"
+                      "https://filemanager.aegeantt.com/cdn/MysticLights/Profile.png"
                     }
                     className="img-fluid"
                     alt=""
@@ -209,7 +211,7 @@ const PostRightSidebar = ({
               </div>
               <div className="comments-wrapper space-mb--40">
                 <h2 className="comment-title space-mb--30">
-                  Posts <span>({product["posts"].length})</span>
+                  Post <span>({product["posts"].length})</span>
                 </h2>
 
                 {product.posts.map(function(item, count) {
@@ -217,8 +219,7 @@ const PostRightSidebar = ({
                     <div className="single-comment__image">
                       <img
                         src={
-                          process.env.PUBLIC_URL +
-                          "/assets/images/user/user1.jpeg"
+                          item.picture
                         }
                         className="img-fluid"
                         alt=""
@@ -226,17 +227,16 @@ const PostRightSidebar = ({
                     </div>
                     <div className="single-comment__content">
                       <p className="username">
-                        {item.firstname +" "+ item.lastname} <span className="date">/ April 5, 2020</span>
+                        {item.firstname +" "+ item.lastname} <span className="date">Jan 30th, 2021</span>
                       </p>
 
                       <p className="message">
-                        Thanks for always keeping your WordPress themes up to
-                        date. Your level of support and dedication is second to
-                        none.
+                        {item.text}
                       </p>
 
-                      <a href="#" className="reply-link">
-                        <IoIosRedo /> reply
+                      <a href="#" className="reply-link" style={{fontSize:"24px"}}>
+                        <IoIosHeartEmpty /> 
+                        <span style={{fontSize:"18px", color:"rgb(200,200,200)"}}>2</span>
                       </a>
                     </div>
                   </div>
@@ -245,7 +245,8 @@ const PostRightSidebar = ({
 
                 
               </div>
-              <div className="comment-form">
+
+              <div style={{display:"none"}} className="comment-form">
                 <div>
                   <h2 className="comment-title space-mb--30">
                     Leave your thought here

@@ -1,7 +1,9 @@
 import { IoIosSearch } from "react-icons/io";
 import Link from "next/link";
+import { connect } from "react-redux";
 
-const BlogSidebar = () => {
+const BlogSidebar = ({products}) => {
+  console.log(products);
   return (
     <div className="blog-sidebar">
       <div className="single-sidebar-widget space-mb--40">
@@ -16,7 +18,7 @@ const BlogSidebar = () => {
       </div>
       <div className="single-sidebar-widget space-mb--40">
         <h2 className="single-sidebar-widget__title space-mb--30">
-          Categories
+          Collections
         </h2>
         <ul className="single-sidebar-widget__list single-sidebar-widget__list--category">
           <li>
@@ -245,4 +247,52 @@ const BlogSidebar = () => {
   );
 };
 
-export default BlogSidebar;
+
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addToCart: (
+      item,
+      addToast,
+      quantityCount,
+      selectedProductColor,
+      selectedProductSize
+    ) => {
+      dispatch(
+        addToCart(
+          item,
+          addToast,
+          quantityCount,
+          selectedProductColor,
+          selectedProductSize
+        )
+      );
+    },
+    addToWishlist: (item, addToast) => {
+      dispatch(addToWishlist(item, addToast));
+    },
+    deleteFromWishlist: (item, addToast) => {
+      dispatch(deleteFromWishlist(item, addToast));
+    },
+    addToCompare: (item, addToast) => {
+      dispatch(addToCompare(item, addToast));
+    },
+    deleteFromCompare: (item, addToast) => {
+      dispatch(deleteFromCompare(item, addToast));
+    }
+  };
+};
+
+const mapStateToProps = (state) => {
+  return {
+    products: state.productData
+    //products: getProducts(products, "furniture", "popular", 8)
+
+  };
+};
+//export default connect(mapStateToProps, mapDispatchToProps)(ProductGridWrapper);
+export default connect(mapStateToProps, mapDispatchToProps)(BlogSidebar);
+
+
+
+//export default BlogSidebar;

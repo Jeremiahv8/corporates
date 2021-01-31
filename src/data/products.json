@@ -69,7 +69,7 @@
     "maxstops": 10,
     "isservice": true,
     "category": [
-      "candles"
+      "collection"
     ],
     "tag": [
       "delivery",
@@ -91,18 +91,12 @@
     "date": "june 5, 2020",
     "posts": [
       {
-        "firstname": "Marcus",
-        "lastname": "Redding",
-        "picture": "MarcusRedding",
+        "firstname": "Florance",
+        "lastname": "C",
+        "picture": "https://filemanager.aegeantt.com/cdn/MysticLights/creative%20women.png",
         "domain": "marcus.redding.com",
-        "text": "Mystic Lights create a magical feeling that I cannot explain"
-      },
-      {
-        "firstname": "Lisa",
-        "lastname": "Smith",
-        "picture": "MarcusRedding",
-        "domain": "marcus.redding.com",
-        "text": "Mystic Lights create a magical feeling that I cannot explain"
+        "text": "It is nice to see the creativity of women"
+
       }
     ],
     "followers": [
@@ -149,19 +143,11 @@
     "date": "june 5, 2020",
     "posts": [
       {
-        "firstname": "Marcus",
-        "lastname": "Redding",
+        "firstname": "Florance",
+        "lastname": "C",
         "picture": "MarcusRedding",
         "domain": "marcus.redding.com",
-        "text": "Mystic Lights create a magical feeling that I cannot explain",
-        "timesince": "30"
-      },
-      {
-        "firstname": "Marcus",
-        "lastname": "Redding",
-        "picture": "MarcusRedding",
-        "domain": "marcus.redding.com",
-        "text": "Mystic Lights create a magical feeling that I cannot explain"
+        "text": "It is nice to see the creativity of women"
       }
     ],
     "followers": [
