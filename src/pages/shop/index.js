@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import Paginator from "react-hooks-paginator";
 import { SlideDown } from "react-slidedown";
-import { LayoutOne } from "../../components/Layout";
+import { LayoutNine } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 import { getSortedProducts } from "../../lib/product";
 import {
@@ -58,23 +58,8 @@ const LeftSidebar = ({ products }) => {
   }, [offset, products, sortType, sortValue, filterSortType, filterSortValue]);
 
   return (
-    <LayoutOne>
-      {/* breadcrumb */}
-      <BreadcrumbOne
-        pageTitle="Shop"
-        backgroundImage=""
-      >
-        <ul className="breadcrumb__list">
-          <li>
-            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-              <a>Home</a>
-            </Link>
-          </li>
-
-          <li>Shop</li>
-        </ul>
-      </BreadcrumbOne>
-      <div className="shop-page-content">
+    <LayoutNine aboutOverlay={false}>
+      <div className="shop-page-content" style={{background:"white", marginTop:"54px", marginBottom: "56px"}}>
         {/* shop page header */}
         <ShopHeader
           getLayout={getLayout}
@@ -96,7 +81,7 @@ const LeftSidebar = ({ products }) => {
             <Row>
               <Col
                 lg={3}
-                className="order-2 order-lg-1 space-mt-mobile-only--50"
+                className="order-2  space-mt-mobile-only--50"
               >
                 {/* shop sidebar */}
                 <ShopSidebar
@@ -105,7 +90,7 @@ const LeftSidebar = ({ products }) => {
                 />
               </Col>
 
-              <Col lg={9} className="order-1 order-lg-2">
+              <Col lg={9} className="order-1 ">
                 {/* shop products */}
                 <ShopProducts layout={layout} products={currentData} />
 
@@ -128,7 +113,7 @@ const LeftSidebar = ({ products }) => {
           </Container>
         </div>
       </div>
-    </LayoutOne>
+    </LayoutNine>
   );
 };
 

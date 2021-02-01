@@ -224,7 +224,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
             {/* icons */}
             <div className="header-content__icons space-pl--15">
               <ul className="d-none d-lg-block">
-              <li>
+                <li>
                   <button
                     onClick={() => {
                       setOffCanvasSearchActive(true);
@@ -237,7 +237,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </button>
                 </li>
                 
-                {/*
+                
                 <li >
                   <button
                     onClick={() => {
@@ -254,6 +254,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                     </IconButton>
                   </button>
                 </li>
+                {/*
                 <li >
                   <button
                     onClick={() => {
@@ -341,6 +342,8 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </button>
                 </li>
               </ul>
+
+
             </div>
           </div>
         </Container>

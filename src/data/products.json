@@ -6,9 +6,9 @@
     "sku": "asdf111",
     "name": "The Snow White Pinapple Vessel",
     "slug": "the-snow-white-pinapple-vessel",
-    "price": 20,
+    "price": 24,
     "discount": 0,
-    "new": true,
+    "new": false,
     "rating": 0,
     "ratingCount": 0,
     "saleCount": 0,
@@ -19,13 +19,13 @@
       "collection"
     ],
     "tag": [
-      "delivery",
-      "transport"
+      "candles"
     ],
     "stock": 10,
     "thumbImage": [
       "https://filemanager.aegeantt.com/cdn/MysticLights/Unscented.png",
-      "https://filemanager.aegeantt.com/cdn/MysticLights/Snow%20White%20Blog.png"
+      "https://filemanager.aegeantt.com/cdn/MysticLights/Snow%20White%20Blog.png",
+      "https://filemanager.aegeantt.com/cdn/MysticLights/naked.png"
     ],
     "image": [
     ],
@@ -50,15 +50,15 @@
     ]
   },
   {
-    "id": "0",
-    "by": "Plant Heaven",
+    "id": "1",
+    "by": "Mystic Lights",
     "domain": "https://plant-heaven.com",
     "sku": "asdf111",
     "name": "The Copper Gold Pineapple Vessel",
     "slug": "the-copper-gold-pineapple-vessel",
-    "price": 20,
+    "price": 24,
     "discount": 0,
-    "new": true,
+    "new": false,
     "rating": 0,
     "ratingCount": 0,
     "saleCount": 0,
@@ -69,13 +69,13 @@
       "service"
     ],
     "tag": [
-      "delivery",
-      "transport"
+      "candles"
     ],
     "stock": 10,
     "thumbImage": [
       "https://filemanager.aegeantt.com/cdn/MysticLights/mysic%20gold.png",
-      "https://filemanager.aegeantt.com/cdn/MysticLights/mysic%20gold%20wide.png"
+      "https://filemanager.aegeantt.com/cdn/MysticLights/mysic%20gold%20wide.png",
+      "https://filemanager.aegeantt.com/cdn/MysticLights/gold.png"
     ],
     "image": [
     ],
@@ -89,8 +89,8 @@
     "posts": [
       {
         "firstname": "Florance",
-        "lastname": "C",
-        "picture": "MarcusRedding",
+        "lastname": "",
+        "picture": "https://filemanager.aegeantt.com/cdn/MysticLights/creative%20women.png",
         "domain": "marcus.redding.com",
         "text": "It is nice to see the creativity of women"
       }

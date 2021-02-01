@@ -23,6 +23,7 @@ import {
 
 import products from "../../data/products.json";
 
+
 const PostRightSidebar = ({
   product,
   cartItems,

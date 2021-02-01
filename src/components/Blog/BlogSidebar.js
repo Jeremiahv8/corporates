@@ -2,8 +2,14 @@ import { IoIosSearch } from "react-icons/io";
 import Link from "next/link";
 import { connect } from "react-redux";
 
+import CurrencyFormat from 'react-currency-format';
+
+import categoryData from "../../data/categories/category-data.json";
+
+
 const BlogSidebar = ({products}) => {
   console.log(products);
+  
   return (
     <div className="blog-sidebar">
       <div className="single-sidebar-widget space-mb--40">
@@ -16,151 +22,69 @@ const BlogSidebar = ({products}) => {
           </form>
         </div>
       </div>
+      
+
+      <div className="single-sidebar-widget space-mb--40">
+        <div className="widget-post-wrapper">
+
+          {products.map(function(item,key) {
+            return <div key={"Prod"+ key} className="single-widget-post">
+                <div className="image">
+                  <Link
+                    href={"/shop/"+item.slug}
+                    as={process.env.PUBLIC_URL + "/shop/"+item.slug}
+                  >
+                    <a>
+                      <img
+                        src={
+                          item.thumbImage[2]
+                        }
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="content">
+                  <h3 className="widget-post-title">
+                    <Link
+                      href={"/shop/"+item.slug}
+                      as={process.env.PUBLIC_URL + "/shop/"+ item.slug}
+                    >
+                      <a>{item.name}</a>
+                    </Link>
+                  </h3>
+                  <p className="widget-post-date"><CurrencyFormat value={item.price} displayType={'text'} thousandSeparator={true} prefix={'$'} /></p>
+                </div>
+              </div>
+          })}  
+          
+          
+
+          
+          
+        </div>
+      </div>
+
+
       <div className="single-sidebar-widget space-mb--40">
         <h2 className="single-sidebar-widget__title space-mb--30">
           Collections
         </h2>
         <ul className="single-sidebar-widget__list single-sidebar-widget__list--category">
-          <li>
-            <Link
-              href="/blog/standard-left-sidebar"
-              as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
-            >
-              <a>Fashion</a>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/blog/standard-left-sidebar"
-              as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
-            >
-              <a>Furniture</a>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/blog/standard-left-sidebar"
-              as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
-            >
-              <a>Accessories</a>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/blog/standard-left-sidebar"
-              as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
-            >
-              <a>Wearables</a>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/blog/standard-left-sidebar"
-              as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
-            >
-              <a>Decor</a>
-            </Link>
-          </li>
+          {categoryData.map(function(item, count) {
+            return <li key={"S_"+count}>
+              <Link
+                href="/blog/standard-left-sidebar"
+                as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
+              >
+                <a>{item.name}</a>
+              </Link>
+            </li>
+          })}
         </ul>
       </div>
-
-      <div className="single-sidebar-widget space-mb--40">
-        <div className="widget-post-wrapper">
-          <div className="single-widget-post">
-            <div className="image">
-              <Link
-                href="/blog/post-left-sidebar"
-                as={process.env.PUBLIC_URL + "/blog/post-left-sidebar"}
-              >
-                <a>
-                  <img
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/assets/images/blog/post-thumbnail-100x120.png"
-                    }
-                    className="img-fluid"
-                    alt=""
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="content">
-              <h3 className="widget-post-title">
-                <Link
-                  href="/blog/post-left-sidebar"
-                  as={process.env.PUBLIC_URL + "/blog/post-left-sidebar"}
-                >
-                  <a>Chic Fashion Phenomenon</a>
-                </Link>
-              </h3>
-              <p className="widget-post-date">June 5, 2020</p>
-            </div>
-          </div>
-
-          <div className="single-widget-post">
-            <div className="image">
-              <Link
-                href="/blog/post-left-sidebar"
-                as={process.env.PUBLIC_URL + "/blog/post-left-sidebar"}
-              >
-                <a>
-                  <img
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/assets/images/blog/post-thumbnail-6-100x120.png"
-                    }
-                    className="img-fluid"
-                    alt=""
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="content">
-              <h3 className="widget-post-title">
-                <Link
-                  href="/blog/post-left-sidebar"
-                  as={process.env.PUBLIC_URL + "/blog/post-left-sidebar"}
-                >
-                  <a>Go Your Own Way</a>
-                </Link>
-              </h3>
-              <p className="widget-post-date">June 5, 2020</p>
-            </div>
-          </div>
-
-          <div className="single-widget-post">
-            <div className="image">
-              <Link
-                href="/blog/post-left-sidebar"
-                as={process.env.PUBLIC_URL + "/blog/post-left-sidebar"}
-              >
-                <a>
-                  <img
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/assets/images/blog/post-thumbnail-9-100x120.png"
-                    }
-                    className="img-fluid"
-                    alt=""
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="content">
-              <h3 className="widget-post-title">
-                <Link
-                  href="/blog/post-left-sidebar"
-                  as={process.env.PUBLIC_URL + "/blog/post-left-sidebar"}
-                >
-                  <a>Home-made Body Lotion</a>
-                </Link>
-              </h3>
-              <p className="widget-post-date">June 5, 2020</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      {/*
       <div className="single-sidebar-widget space-mb--40">
         <div className="blog-sidebar-banner">
           <Link
@@ -243,6 +167,8 @@ const BlogSidebar = ({products}) => {
           </Link>
         </div>
       </div>
+      */}
+
     </div>
   );
 };
