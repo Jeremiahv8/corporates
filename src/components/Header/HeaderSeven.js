@@ -237,8 +237,8 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </button>
                 </li>
                 
-                
-                <li >
+
+                <li>
                   <button
                     onClick={() => {
                       setOffCanvasCartActive(true);
@@ -247,11 +247,14 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                         .classList.add("overflow-hidden");
                     }}
                   >
-                    <IconButton aria-label="cart">
-                      <StyledBadge_Apps badgeContent={0} color="secondary">
-                        <AppsIcon />
-                      </StyledBadge_Apps>
-                    </IconButton>
+                    <IoIosCart />
+                    {cartItems.length >= 1 ? (
+                      <span className="count">
+                        {cartItems.length ? cartItems.length : ""}
+                      </span>
+                    ) : (
+                      ""
+                    )}
                   </button>
                 </li>
                 {/*
