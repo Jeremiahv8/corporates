@@ -39,3 +39,5 @@ const App = () => (
 );
 
 ReactDOM.render(<App />, document.body);
+
+npm install --save @stripe/react-stripe-js @stripe/stripe-js
