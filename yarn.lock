@@ -5573,6 +5573,11 @@ react-sticky-box@^0.9.3:
     "@babel/runtime" "^7.1.5"
     resize-observer-polyfill "^1.5.1"
 
+react-stripe@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-stripe/-/react-stripe-0.1.0.tgz#c198e3ed9bf91bb6e9c639c6d110a415081669b1"
+  integrity sha512-aQeYO9uHPh6G2J6mmGRybJNxXpZB/ZECqNCmNGSTuxKjN4cfZHvy2OE2PHGZizkC5qa/5RhyuPZoPxLXt0bZww==
+
 react-tiger-transition@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/react-tiger-transition/-/react-tiger-transition-4.1.2.tgz#ca1c47ee8a530c10d41a8883ec1a7239b021934b"
