@@ -14,7 +14,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { connect } from "react-redux";
 import { getDiscountPrice } from "../../lib/product";
 import { IoMdCash } from "react-icons/io";
-import { LayoutNine } from "../../components/Layout";
+import { LayoutTwo } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 
 import defaultoptions from "../../data/general/default-options.json";
@@ -51,7 +51,7 @@ const CheckoutForm = () => {
   );
 };
 
-const stripePromise = loadStripe('pk_test_JJ1eMdKN0Hp4UFJ6kWXWO4ix00jtXzq5XG');
+const stripePromise = loadStripe('sk_test_51IGA4PC5QnPxKzpzNUJQB6oFOsrlHymP6yfUe940ctgRidZWwtLNxTUlTlZ5UDaMM5lpIUIpgFwmIyTfWqWl7g4W00wIwSuCNc');
 
 const App = () => (
   <Elements stripe={stripePromise}>
@@ -167,9 +167,23 @@ const Checkout = ({ cartItems }) => {
   }
 
   return (
-    <LayoutNine>
+    <LayoutTwo>
+      {/* breadcrumb */}
+      <BreadcrumbOne
+        pageTitle="Checkout"
+        backgroundImage=""
+      >
+        <ul className="breadcrumb__list">
+          <li>
+            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
+              <a>Home</a>
+            </Link>
+          </li>
 
-      <div className="checkout-area space-mt--r130 space-mb--r130" style={{background: "white", marginTop:"56px", paddingTop: "56px", paddingBottom: "56px", minHeight: "100vh"}}>
+          <li>Checkout</li>
+        </ul>
+      </BreadcrumbOne>
+      <div className="checkout-area space-mt--r130 space-mb--r130">
         <Container>
           {cartItems && cartItems.length >= 1 ? (
             <Row>
@@ -389,7 +403,7 @@ const Checkout = ({ cartItems }) => {
           )}
         </Container>
       </div>
-    </LayoutNine>
+    </LayoutTwo>
   );
 };
 
