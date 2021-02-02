@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { connect } from "react-redux";
 import { useToasts } from "react-toast-notifications";
 import { LayoutTwo } from "../../components/Layout";
-import { LayoutOne } from "../../components/Layout";
+import { LayoutNine } from "../../components/Layout";
 import { getDiscountPrice } from "../../lib/product";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 import {
@@ -60,31 +60,9 @@ const ProductBasic = ({
   )[0];
 
   return (
-    <LayoutOne>
-      {/* breadcrumb */}
-      <BreadcrumbOne
-        backgroundImage={branding.pagedefaults.breadcrumbbanner}
-      >
-        <ul className="breadcrumb__list">
-          <li>
-            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/shop/"
-              as={process.env.PUBLIC_URL + "/shop/"}
-            >
-              <a>Shop</a>
-            </Link>
-          </li>
-          <li>{product.name}</li>
-        </ul>
-      </BreadcrumbOne>
-
+    <LayoutNine aboutOverlay={false}>
       {/* product details */}
-      <div className="product-details space-mt--r100 space-mb--r100" style={{marginBottom: "25px"}}>
+      <div className="product-details space-mt--r100 space-mb--r100" style={{background: "white", marginTop:"56px", paddingTop: "56px", paddingBottom: "56px"}}>
         <Container>
           <Row>
             <Col lg={6} className="space-mb-mobile-only--50">
@@ -125,7 +103,7 @@ const ProductBasic = ({
           </Row>
         </Container>
       </div>
-    </LayoutOne>
+    </LayoutNine>
   );
 };
 

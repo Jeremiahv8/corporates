@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoMdAdd } from "react-icons/io";
 import ModalVideo from "react-modal-video";
-import { LayoutTwo } from "../../components/Layout";
+import { LayoutNine } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 import { TestimonialOne } from "../../components/Testimonial";
 import { BrandLogoOne } from "../../components/BrandLogo";
@@ -19,24 +19,10 @@ const About = () => {
   const [modalStatus, isOpen] = useState(false);
 
   return (
-    <LayoutTwo>
-      {/* breadcrumb */}
-      <BreadcrumbOne
-        pageTitle="About"
-        backgroundImage=""
-      >
-        <ul className="breadcrumb__list">
-          <li>
-            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-              <a>Home</a>
-            </Link>
-          </li>
-
-          <li>About</li>
-        </ul>
-      </BreadcrumbOne>
+    <LayoutNine aboutOverlay={false}>
+      
       {/* about content */}
-      <div className="about-content space-mt--r130 space-mb--r130">
+      <div className="about-content space-mt--r130 space-mb--r130" style={{background: "white", marginTop: "56px", paddingTop: "56px", paddingBottom: "56px"}}>
         <div className="section-title-container space-mb--40">
           <Container>
             <Row>
@@ -49,6 +35,9 @@ const About = () => {
                   </h2>
                   <p className="title-text">
                     {aboutpageData.bio}
+                  </p>
+                  <p className="title-text">
+                    {aboutpageData.content}
                   </p>
                 </div>
               </Col>
@@ -68,7 +57,7 @@ const About = () => {
                     backgroundImage: `url(${
                       aboutpageData.ytvideothumbnail
                     })`
-                  }}
+                    , backgroundPosition: "bottom"}}
                 >
                   <p className="video-text video-text-left">
                     <Link
@@ -150,16 +139,16 @@ const About = () => {
             </Row>
           </Container>
         </div>
-        {/* testimonial */}
+        {/* testimonial 
         <TestimonialOne
           testimonialData={testimonialData}
           backgroundImage={aboutpageData.testimonialbgimage}
         />
         <div className="space-mb--r100"></div>
-        {/* brand logo */}
         <BrandLogoOne brandLogoData={brandLogoData} />
+      */}
       </div>
-    </LayoutTwo>
+    </LayoutNine>
   );
 };
 

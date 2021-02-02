@@ -1,11 +1,11 @@
 {
     "Id": "1",
-    "FirstName": "corporates",
-    "LastName": "app",
-    "Domain": "corporates.app",
-    "phone": "+1 (868) 717-3110",
-    "email": "info@corporates.app",
-    "address": "#230 Eastern Main Road, El Dorado, Saint George",
+    "FirstName": "Mystic",
+    "LastName": "Lights",
+    "Domain": "mystic-lights.com",
+    "phone": "+1 (917) 659 5130",
+    "email": "mysticlightlights@yahoo.com",
+    "address": "Colorado, USA",
     "googlemapembeded": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJt3LYFYkANowRsVsTcSAbKV8&key=AIzaSyDbmsa6zJOdUnKaEDtmGPY1RZmYmeW9VwU",
     "hours": [
         {

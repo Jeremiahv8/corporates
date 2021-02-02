@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoIosPin, IoIosCall, IoIosMail, IoIosClock } from "react-icons/io";
-import { LayoutTwo } from "../../components/Layout";
+import { LayoutNine } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 import {
   SectionTitleOne,
@@ -16,23 +16,9 @@ import metadata from "../../data/general/meta-data.json";
 
 const Contact = () => {
   return (
-    <LayoutTwo>
-      {/* breadcrumb */}
-      <BreadcrumbOne
-        pageTitle="Contact"
-        backgroundImage=""
-      >
-        <ul className="breadcrumb__list">
-          <li>
-            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-              <a>Home</a>
-            </Link>
-          </li>
-
-          <li>Contact</li>
-        </ul>
-      </BreadcrumbOne>
-      <div className="contact-page-content-wrapper space-mt--r130 space-mb--r130">
+    <LayoutNine>
+      
+      <div className="contact-page-content-wrapper space-mt--r130 space-mb--r130" style={{background: "white", marginTop: "56px", paddingTop: "56px", paddingBottom: "56px"}}>
         <div className="contact-page-top-info space-mb--r100">
           <Container>
             <Row>
@@ -178,7 +164,7 @@ const Contact = () => {
           </Container>
         </div>
       </div>
-    </LayoutTwo>
+    </LayoutNine>
   );
 };
 
