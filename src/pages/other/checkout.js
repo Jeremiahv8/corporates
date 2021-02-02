@@ -51,7 +51,7 @@ const CheckoutForm = () => {
   );
 };
 
-const stripePromise = loadStripe('sk_test_51IGA4PC5QnPxKzpzNUJQB6oFOsrlHymP6yfUe940ctgRidZWwtLNxTUlTlZ5UDaMM5lpIUIpgFwmIyTfWqWl7g4W00wIwSuCNc');
+const stripePromise = loadStripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
 
 const App = () => (
   <Elements stripe={stripePromise}>
