@@ -11,7 +11,7 @@ import {
   cartItemStock
 } from "../../redux/actions/cartActions";
 import { getDiscountPrice } from "../../lib/product";
-import { LayoutTwo } from "../../components/Layout";
+import { LayoutNine } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 import { IoIosClose, IoMdCart } from "react-icons/io";
 
@@ -31,25 +31,10 @@ const Cart = ({
   });
 
   return (
-    <LayoutTwo>
-      {/* breadcrumb */}
-      <BreadcrumbOne
-        pageTitle="Cart"
-        backgroundImage=""
-      >
-        <ul className="breadcrumb__list">
-          <li>
-            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-              <a>Home</a>
-            </Link>
-          </li>
-
-          <li>Cart</li>
-        </ul>
-      </BreadcrumbOne>
+    <LayoutNine aboutOverlay={false}>
 
       {/* cart content */}
-      <div className="cart-content space-mt--r130 space-mb--r130">
+      <div className="cart-content space-mt--r130 space-mb--r130" style={{background: "white", marginTop:"56px", paddingTop: "56px", paddingBottom: "56px", minHeight: "100vh"}}>
         <Container>
           {cartItems && cartItems.length >= 1 ? (
             <Row>
@@ -261,7 +246,7 @@ const Cart = ({
           )}
         </Container>
       </div>
-    </LayoutTwo>
+    </LayoutNine>
   );
 };
 
