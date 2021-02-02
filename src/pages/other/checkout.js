@@ -14,7 +14,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { connect } from "react-redux";
 import { getDiscountPrice } from "../../lib/product";
 import { IoMdCash } from "react-icons/io";
-import { LayoutTwo } from "../../components/Layout";
+import { LayoutNine } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 
 import defaultoptions from "../../data/general/default-options.json";
@@ -167,23 +167,9 @@ const Checkout = ({ cartItems }) => {
   }
 
   return (
-    <LayoutTwo>
-      {/* breadcrumb */}
-      <BreadcrumbOne
-        pageTitle="Checkout"
-        backgroundImage=""
-      >
-        <ul className="breadcrumb__list">
-          <li>
-            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-              <a>Home</a>
-            </Link>
-          </li>
+    <LayoutNine>
 
-          <li>Checkout</li>
-        </ul>
-      </BreadcrumbOne>
-      <div className="checkout-area space-mt--r130 space-mb--r130">
+      <div className="checkout-area space-mt--r130 space-mb--r130" style={{background: "white", marginTop:"56px", paddingTop: "56px", paddingBottom: "56px"}}>
         <Container>
           {cartItems && cartItems.length >= 1 ? (
             <Row>
@@ -403,7 +389,7 @@ const Checkout = ({ cartItems }) => {
           )}
         </Container>
       </div>
-    </LayoutTwo>
+    </LayoutNine>
   );
 };
 
