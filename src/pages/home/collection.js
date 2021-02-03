@@ -132,6 +132,7 @@ const Collection = () => {
         title="Handcrafted Candles"
         subtitle="Made in Colorado"
       />
+      
       {/*
       <div className="products-wrapper space-mb--r100">
         <Container className="wide">

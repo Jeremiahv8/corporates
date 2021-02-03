@@ -224,6 +224,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
             {/* icons */}
             <div className="header-content__icons space-pl--15">
               <ul className="d-none d-lg-block">
+                {/*
                 <li>
                   <button
                     onClick={() => {
@@ -236,7 +237,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                     <IoIosSearch />
                   </button>
                 </li>
-                
+                */}
 
                 <li>
                   <button

@@ -71,7 +71,7 @@ const PostRightSidebar = ({
               <div className="blog-grid-post blog-grid-post--sticky space-pb--50 space-mb--40">
                 <div className="blog-grid-post__image blog-grid-post--sticky__image space-mb--30">
                   <img
-                    src={product.thumbImage[1]}
+                    src={product.thumbImage[2]}
                     className="img-fluid"
                     alt=""
                   />

@@ -83,7 +83,7 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
                           >
                             <a>
                               <img
-                                src={process.env.PUBLIC_URL + single.thumbImage[0]}
+                                src={process.env.PUBLIC_URL + single.thumbImage[1]}
                                 className="img-fluid"
                                 alt=""
                               />

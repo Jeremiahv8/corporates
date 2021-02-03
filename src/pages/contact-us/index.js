@@ -16,7 +16,7 @@ import metadata from "../../data/general/meta-data.json";
 
 const Contact = () => {
   return (
-    <LayoutNine>
+    <LayoutNine aboutOverlay={false}>
       
       <div className="contact-page-content-wrapper space-mt--r130 space-mb--r130" style={{background: "white", marginTop: "56px", paddingTop: "56px", paddingBottom: "56px"}}>
         <div className="contact-page-top-info space-mb--r100">
