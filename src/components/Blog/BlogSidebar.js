@@ -28,16 +28,17 @@ const BlogSidebar = ({products}) => {
         <div className="widget-post-wrapper">
 
           {products.map(function(item,key) {
-            return <div key={"Prod"+ key} className="single-widget-post">
+            return <div key={"ProductBlog"+ key} className="single-widget-post">
                 <div className="image">
                   <Link
-                    href={"/shop/"+item.slug}
-                    as={process.env.PUBLIC_URL + "/shop/"+item.slug}
+                    href={"/blog/"+ item.slug}
+                    as={process.env.PUBLIC_URL + "/blog/"+ item.slug}
                   >
                     <a>
+                      {item.slug}
                       <img
                         src={
-                          item.thumbImage[2]
+                          item.thumbImage[1]
                         }
                         className="img-fluid"
                         alt=""
@@ -75,8 +76,8 @@ const BlogSidebar = ({products}) => {
           {categoryData.map(function(item, count) {
             return <li key={"S_"+count}>
               <Link
-                href="/blog/standard-left-sidebar"
-                as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
+                href={"/blog/"+ products.slug}
+                as={process.env.PUBLIC_URL + "/blog/"+ products.slug}
               >
                 <a>{item.name}</a>
               </Link>
