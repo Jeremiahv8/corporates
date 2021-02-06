@@ -62,7 +62,7 @@ const LeftSidebar = ({ products }) => {
 
   return (
     <LayoutNine aboutOverlay={false}>
-      <div className="shop-page-content" style={{background:"white", marginTop:"54px", marginBottom: "56px"}}>
+      <div className="shop-page-content" style={{background:"white", marginTop:"54px", marginBottom: "56px", paddingBottom: "56px"}}>
         {/* shop page header */}
         <ShopHeader
           getLayout={getLayout}
@@ -86,11 +86,13 @@ const LeftSidebar = ({ products }) => {
                 lg={3}
                 className="order-2  space-mt-mobile-only--50"
               >
-                {/* shop sidebar */}
+                {/* shop sidebar 
                 <ShopSidebar
                   products={products}
                   getSortParams={getSortParams}
                 />
+                */}
+                
               </Col>
 
               <Col lg={9} className="order-1 ">
