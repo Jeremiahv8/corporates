@@ -19,8 +19,8 @@ const BlogPostGridWrapper = ({ column }) => {
             <div className="blog-grid-post">
               <div className="blog-grid-post__image space-mb--30">
                 <Link
-                  href={"/blog/"+ item.slug}
-                  as={process.env.PUBLIC_URL + "/blog/"+ item.slug}
+                  href={"/wall/"+ item.slug}
+                  as={process.env.PUBLIC_URL + "/wall/"+ item.slug}
                 >
                   <a>
                     <img
@@ -40,8 +40,8 @@ const BlogPostGridWrapper = ({ column }) => {
                 </div>
                 <h2 className="post-title">
                   <Link
-                    href={"/blog/"+ item.slug}
-                    as={process.env.PUBLIC_URL + "/blog/" + item.slug}
+                    href={"/wall/"+ item.slug}
+                    as={process.env.PUBLIC_URL + "/wall/" + item.slug}
                   >
                     <a>{item.name}</a>
                   </Link>
@@ -50,8 +50,8 @@ const BlogPostGridWrapper = ({ column }) => {
                   {item.shortDescription}
                 </p>
                 <Link
-                  href={"/blog/"+ item.slug}
-                  as={process.env.PUBLIC_URL + "/blog/"+ item.slug}
+                  href={"/wall/"+ item.slug}
+                  as={process.env.PUBLIC_URL + "/wall/"+ item.slug}
                 >
                   <a className="blog-readmore-btn">
                     <IoIosAdd /> read more

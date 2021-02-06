@@ -6,7 +6,7 @@ import { BlogSidebar, BlogPostGridWrapper } from "../../components/Blog";
 
 const Wall = () => {
   return (
-    <LayoutNine>
+    <LayoutNine aboutOverlay={false}>
       <div className="blog-page-wrapper space-mb--r130 space-mt--r130" style={{background:"white", marginTop:"54px", marginBottom: "56px", paddingTop: "56px"}}>
         <Container>
           <Row>

@@ -18,6 +18,9 @@ import branding from "../../data/general/branding.json";
 
 
 const LeftSidebar = ({ products }) => {
+
+  //console.log(products);
+
   const [layout, setLayout] = useState("grid four-column");
   const [sortType, setSortType] = useState("");
   const [sortValue, setSortValue] = useState("");

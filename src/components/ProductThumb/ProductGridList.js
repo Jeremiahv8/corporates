@@ -46,14 +46,14 @@ const ProductGridList = ({
               <a className="image-wrap">
                 <img
                   style={{height: "260px", objectFit: "cover"}}
-                  src={process.env.PUBLIC_URL + product.thumbImage[0]}
+                  src={product.thumbImage[0]}
                   className="img-fluid"
                   alt={product.name}
                 />
                 {product.thumbImage.length > 1 ? (
                   <img
                     style={{height: "260px", objectFit: "cover"}}
-                    src={process.env.PUBLIC_URL + product.thumbImage[1]}
+                    src={product.thumbImage[1]}
                     className="img-fluid"
                     alt={product.name}
                   />
@@ -215,14 +215,14 @@ const ProductGridList = ({
               <a className="image-wrap">
                 <img
                   style={{height: "493px",objectFit: "contain", backgroundColor: "white"}}
-                  src={process.env.PUBLIC_URL + product.thumbImage[0]}
+                  src={ product.thumbImage[0]}
                   className="img-fluid"
                   alt={product.name}
                 />
                 {product.thumbImage.length > 1 ? (
                   <img
                     style={{height: "493px",objectFit: "contain", backgroundColor: "white"}}
-                    src={process.env.PUBLIC_URL + product.thumbImage[1]}
+                    src={ product.thumbImage[1]}
                     className="img-fluid"
                     alt={product.name}
                   />
