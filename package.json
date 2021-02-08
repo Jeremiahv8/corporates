@@ -18,6 +18,7 @@
     "framer-motion": "^3.2.2-rc.1",
     "next": "9.4.1",
     "next-iron-session": "^4.1.10",
+    "next-pwa": "^5.0.5",
     "react": "16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-countdown": "^2.2.1",

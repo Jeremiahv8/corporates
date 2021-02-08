@@ -1,0 +1,13 @@
+{
+    "name": "Mystic Lights",
+    "description": "corp",
+    "icons": [{
+      "src": "assets/images/light icon.png",
+      "sizes": "192x192"
+    }],
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+  }

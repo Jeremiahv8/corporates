@@ -61,7 +61,7 @@ const CategorySlider = ({ categoryData, spaceBottomClass }) => {
                     >
                       <div className="single-category__image single-category__image--two">
                         <img
-                          src={process.env.PUBLIC_URL + single.image}
+                          src={single.image}
                           className="img-fluid"
                           alt=""
                         />
@@ -70,7 +70,7 @@ const CategorySlider = ({ categoryData, spaceBottomClass }) => {
                         <div className="title">
                           <Link
                             href={single.url}
-                            as={process.env.PUBLIC_URL + single.url}
+                            as={single.url}
                           >
                             <a>{single.name}</a>
                           </Link>
@@ -79,7 +79,7 @@ const CategorySlider = ({ categoryData, spaceBottomClass }) => {
                       </div>
                       <Link
                         href={single.url}
-                        as={process.env.PUBLIC_URL + single.url}
+                        as={single.url}
                       >
                         <a className="banner-link"></a>
                       </Link>

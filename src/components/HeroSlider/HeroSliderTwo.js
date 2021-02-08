@@ -42,7 +42,7 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
 
                   <div className="hero-slider-two__image">
                     <img
-                      src={process.env.PUBLIC_URL + single.Image}
+                      src={single.Image}
                       alt=""
                       className="img-fluid"
                       style={{width:"500px", height: "auto", marginRight: "10px"}}
@@ -57,9 +57,9 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
                     />
                     <div className="slider-link">
                       <Link
-                        href={`/blog/[slug]?slug=${single.slug}`}
+                        href={`/wall/[slug]?slug=${single.slug}`}
                         as={
-                          process.env.PUBLIC_URL + "/blog/" + single.slug
+                           "/wall/" + single.slug
                         }
                       >
                         <a className="lezada-button lezada-button--medium">

@@ -3,7 +3,7 @@
     "id": "0",
     "by": "Mystic Lights",
     "domain": "https://mystic-lights.com",
-    "sku": "asdf111",
+    "sku": "corp1",
     "name": "The Snow White Pinapple Vessel",
     "slug": "the-snow-white-pinapple-vessel",
     "price": 24,
@@ -12,12 +12,12 @@
     "rating": 0,
     "ratingCount": 0,
     "saleCount": 0,
-    "multistop": true,
+    "multistop": false,
     "maxstops": 10,
     "isservice": true,
     "likes": 0,
     "category": [
-      "collection"
+      "candles"
     ],
     "tag": [
       "candles"
@@ -56,21 +56,21 @@
     "id": "1",
     "by": "Mystic Lights",
     "domain": "https://plant-heaven.com",
-    "sku": "asdf111",
+    "sku": "corp2",
     "name": "The Copper Gold Pineapple Vessel",
     "slug": "the-copper-gold-pineapple-vessel",
-    "price": 24,
+    "price": 22,
     "discount": 0,
     "new": false,
     "rating": 0,
     "ratingCount": 0,
     "saleCount": 0,
-    "multistop": true,
+    "multistop": false,
     "maxstops": 10,
     "isservice": true,
     "likes": 0,
     "category": [
-      "service"
+      "candles"
     ],
     "tag": [
       "candles"

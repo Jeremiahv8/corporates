@@ -4,7 +4,7 @@
     "image": "https://filemanager.aegeantt.com/cdn/MysticLights/NudeCandle.png",
     "name": "Naked Candles",
     "count": 1,
-    "url": "/blog/naked-candles",
+    "url": "/wall/the-snow-white-pinapple-vessel",
     "info": "Naked/Nude/Virgin"
   },
   {
@@ -12,7 +12,7 @@
     "image": "https://filemanager.aegeantt.com/cdn/MysticLights/MasculineCandle.png",
     "name": "Earth Strong Candles",
     "count": 1,
-    "url": "/blog/earth-candles",
+    "url": "/wall/the-copper-gold-pineapple-vessel",
     "info": "Cadamond/Woody Leather"
 
   },
@@ -21,7 +21,7 @@
     "image": "https://filemanager.aegeantt.com/cdn/MysticLights/ComingSoon.png",
     "name": "Upcoming candles",
     "count": 7,
-    "url": "/blog/new-candles",
+    "url": "/wall/new-candles",
     "info": "New Candles"
   },
   {
@@ -29,14 +29,14 @@
     "image": "/WhiteImg",
     "name": "Love Candles",
     "count": 0,
-    "url": "/blog/ray-of-love"
+    "url": "/wall/ray-of-love"
   },
   {
     "id": "5",
     "image": "/YellowImg",
     "name": "Sunshine Love",
     "count": 0,
-    "url": "/shop/left-sidebar"
+    "url": "/wall/left-sidebar"
   },
   {
     "id": "6",

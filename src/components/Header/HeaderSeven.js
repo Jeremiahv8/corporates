@@ -200,7 +200,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
               >
                 <IoIosMenu />
               </button>
-              <Link href="/" as={process.env.PUBLIC_URL + "/"}>
+              <Link href="/" as={"/"}>
                 <a>
                   <img
                     style={{height: Logo_height}}
@@ -275,6 +275,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                     </IconButton>
                   </button>
                 </li>
+                */}
                 <li >
                 <button
                     onClick={() => {
@@ -300,7 +301,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </a>
                   </button>
                 </li>
-                  */}
+                  
               </ul>
 
 
