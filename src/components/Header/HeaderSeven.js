@@ -330,8 +330,8 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
               <ul className="d-block d-lg-none">
                 <li>
                   <Link
-                    href="/other/wishlist"
-                    as={process.env.PUBLIC_URL + "/other/wishlist"}
+                    href="/heaven"
+                    as={"heaven"}
                   >
                     <a>
                       <IoIosHeartEmpty />
