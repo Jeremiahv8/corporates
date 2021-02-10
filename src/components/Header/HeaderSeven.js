@@ -29,7 +29,8 @@ import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 
 
-import TransactionHistory from '../../components/transaction-history.json';
+//import TransactionHistory from '../../components/transaction-history.json';
+import CurrencyFormat from 'react-currency-format';
 
 
 const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppState, ProfileState, setProfileState }) => {
@@ -179,7 +180,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
   }, []);
 
   const [Credit, setCredit] = useState(0.00);
-s
+
   return (
 
     <Fragment>
