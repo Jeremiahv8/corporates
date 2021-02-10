@@ -38,13 +38,13 @@ const FooterOne = () => {
             <nav className="footer-nav-container footer-nav-container--horizontal space-mb--20">
               <ul>
                 <li>
-                  <a href="/privacy-policy/">PRIVACY POLICY</a>
+                  <a href="/privacy-policy">PRIVACY POLICY</a>
                 </li>
                 <li>
-                  <a href="/shipping-policy/">SHIPPING POLICY</a>
+                  <a href="/shipping-policy">SHIPPING POLICY</a>
                 </li>
                 <li>
-                  <a href="/returns-policy/">RETURNS POLICY</a>
+                  <a href="/returns-policy">RETURNS POLICY</a>
                 </li>
               </ul>
             </nav>

@@ -3,33 +3,34 @@ import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import { HeaderTwo } from "../components/Header";
 
+import { LayoutNine } from "../components/Layout";
+
+
 const NotFound = () => {
   return (
-    <Fragment>
-      <HeaderTwo />
+    <LayoutNine aboutOverlay={false}>
       <div
         className="nothing-found-area bg-404"
         style={{
           backgroundImage: `url(${
-            "https://static.vecteezy.com/system/resources/previews/000/425/737/original/delivery-man-with-box-postman-design-isolated-on-white-background-courier-in-hat-and-uniform-with-package-vector.jpg"
+            "https://img.wallpapersafari.com/desktop/1920/1080/31/67/NG82fm.jpg"
           })`,
           backgroundSize: "100% auto",
           backgroundRepeat: "no-repeat",
-
         }}
       >
-        <div style={{background: "rgba(255,255,255,.75)", width: "100vw", height: "100vh", position: "absolute"}}></div>
+        <div style={{background: "rgba(0,0,0,.75)", width: "100vw", height: "100vh", position: "absolute"}}></div>
 
         <Container>
           <Row>
             <Col lg={6}>
-              <div className="nothing-found-content">
-                <h1>Oops!</h1>
-                <h1 className="space-mb--50">Page not found!</h1>
+              <div className="nothing-found-content" style={{color: "white"}}>
+                <h1 style={{color: "rgb(225,225,225)"}}>Page Locked!!</h1>
+                <p style={{textAlign: "center", color: "rgb(200,200,200)"}} className="direction-page">You cannot access this page at this moment because the owner has temporarily locked it</p>
                 <p className="direction-page">
-                  PLEASE GO BACK TO{" "}
-                  <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-                    <a>homepage</a>
+                  BACK TO{" "}
+                  <Link href="/" as={"/"}>
+                    <a style={{color: "rgb(225,225,225)", borderColor: "rgb(200,200,200)"}}>Landing Page</a>
                   </Link>
                 </p>
               </div>
@@ -37,7 +38,7 @@ const NotFound = () => {
           </Row>
         </Container>
       </div>
-    </Fragment>
+    </LayoutNine>
   );
 };
 

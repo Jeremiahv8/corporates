@@ -54,7 +54,7 @@ const ProductModal = (props) => {
       className="product-quickview"
       centered
     >
-      <Modal.Body>
+      <Modal.Body style={{height: "600px"}}>
         <Modal.Header closeButton></Modal.Header>
         <div className="product-quickview__image-wrapper">
           <Swiper {...gallerySwiperParams}>
@@ -65,7 +65,7 @@ const ProductModal = (props) => {
                     <div className="single-image">
                       <img
                         style={{ height: "600px", objectFit: "contain"}}
-                        src={process.env.PUBLIC_URL + single}
+                        src={ single}
                         className="img-fluid"
                         alt=""
                       />

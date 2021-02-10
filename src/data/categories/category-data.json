@@ -21,7 +21,7 @@
     "image": "https://filemanager.aegeantt.com/cdn/MysticLights/ComingSoon.png",
     "name": "Upcoming candles",
     "count": 7,
-    "url": "/wall/new-candles",
+    "url": "",
     "info": "New Candles"
   },
   {
@@ -29,48 +29,48 @@
     "image": "/WhiteImg",
     "name": "Love Candles",
     "count": 0,
-    "url": "/wall/ray-of-love"
+    "url": ""
   },
   {
     "id": "5",
     "image": "/YellowImg",
     "name": "Sunshine Love",
     "count": 0,
-    "url": "/wall/left-sidebar"
+    "url": ""
   },
   {
     "id": "6",
     "image": "/red",
     "name": "Hearth of Love",
     "count": 0,
-    "url": "/shop/left-sidebar"
+    "url": ""
   },
   {
     "id": "7",
     "image": "/green",
     "name": "Nature Bloom",
     "count": 0,
-    "url": "/shop/left-sidebar"
+    "url": ""
   },
   {
     "id": "8",
     "image": "/black",
     "name": "Midnight Love",
     "count": 0,
-    "url": "/shop/left-sidebar"
+    "url": ""
   },
   {
     "id": "9",
     "image": "/blue",
     "name": "Male Love",
     "count": 0,
-    "url": "/shop/left-sidebar"
+    "url": ""
   },
   {
     "id": "10",
     "image": "/Pink",
     "name": "Female Love",
     "count": 0,
-    "url": "/shop/left-sidebar"
+    "url": ""
   }
 ]

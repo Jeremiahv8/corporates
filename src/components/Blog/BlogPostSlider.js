@@ -54,16 +54,16 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
         <Row className="align-items-center">
           <Col lg={4}>
             <div className="blog-intro space-mb-mobile-only--30">
-              <h2> From our blog</h2>
+              <h2> From our wall</h2>
               <p>
                 Learn more about our Candles, Collections and 
-                most importantly about us
+                most importantly about us. 
               </p>
               <Link
-                href="/blog/standard-left-sidebar"
-                as={process.env.PUBLIC_URL + "/blog/standard-left-sidebar"}
+                href="/wall"
+                as={ "/wall"}
               >
-                <a className="lezada-button lezada-button--medium">view all</a>
+                <a className="lezada-button lezada-button--medium">view wall</a>
               </Link>
             </div>
           </Col>
@@ -76,14 +76,14 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
                       <div className="blog-grid-post" key={i}>
                         <div className="blog-grid-post__image space-mb--30">
                           <Link
-                            href={`/blog/[slug]?slug=${single.slug}`}
+                            href={`/wall/[slug]?slug=${single.slug}`}
                             as={
-                              process.env.PUBLIC_URL + "/blog/" + single.slug
+                              "/wall/" + single.slug
                             }
                           >
                             <a>
                               <img
-                                src={process.env.PUBLIC_URL + single.thumbImage[1]}
+                                src={single.thumbImage[1]}
                                 className="img-fluid"
                                 alt=""
                               />
@@ -98,7 +98,7 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
                           <h2 className="post-title">
                             <Link
                               href={single.url}
-                              as={process.env.PUBLIC_URL + single.url}
+                              as={single.url}
                             >
                               <a>{single.title}</a>
                             </Link>
@@ -106,7 +106,7 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
                           <p className="post-excerpt">{single.text}</p>
                           <Link
                             href={single.url}
-                            as={process.env.PUBLIC_URL + single.url}
+                            as={ single.url}
                           >
                             <a className="blog-readmore-btn">read more</a>
                           </Link>

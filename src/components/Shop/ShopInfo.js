@@ -9,7 +9,7 @@ const ShopInfo = () => {
               <div className="shop-info-single">
                 <h4 className="title">FREE SHIPPING</h4>
                 <div className="content">
-                  <p>On all orders over $75.00</p>
+                  <p>On all orders over $100</p>
                 </div>
               </div>
               <div className="shop-info-single">
@@ -24,7 +24,7 @@ const ShopInfo = () => {
                   <div className="content">
                     <img
                       src={
-                        process.env.PUBLIC_URL + "/assets/images/icon/pay.png"
+                         "/assets/images/icon/pay.png"
                       }
                       className="img-fluid"
                       alt=""

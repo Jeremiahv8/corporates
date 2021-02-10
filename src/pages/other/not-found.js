@@ -5,7 +5,7 @@ import { HeaderTwo } from "../../components/Header";
 
 const NotFound = () => {
   return (
-    <Fragment>
+    <LayoutNine aboutOverlay={false}>
       <HeaderTwo />
       <div
         className="nothing-found-area bg-404"
@@ -22,9 +22,9 @@ const NotFound = () => {
                 <h1>Oops!</h1>
                 <h1 className="space-mb--50">Page not found!</h1>
                 <p className="direction-page">
-                  PLEASE GO BACK TO{" "}
-                  <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-                    <a>homepage</a>
+                  LETS HEAD BACK TO OUT LANDING PAGE {" "}
+                  <Link href="/" as={ "/"}>
+                    <a>Nysric Lights</a>
                   </Link>
                 </p>
               </div>
@@ -32,7 +32,7 @@ const NotFound = () => {
           </Row>
         </Container>
       </div>
-    </Fragment>
+    </LayoutNine>
   );
 };
 

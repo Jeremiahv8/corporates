@@ -79,7 +79,7 @@ const LeftSidebar = ({ products }) => {
         </SlideDown>
 
         {/* shop page body */}
-        <div className="shop-page-content__body space-mt--r130 space-mb--r130">
+        <div style={{marginTop: "56px"}} className="shop-page-content__body space-mt--r130 space-mb--r130">
           <Container>
             <Row>
               <Col

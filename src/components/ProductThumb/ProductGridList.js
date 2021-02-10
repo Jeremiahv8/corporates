@@ -101,7 +101,7 @@ const ProductGridList = ({
                 </button>
               </Tooltip>
 
-              {/* add to compare */}
+              {/* add to compare 
               <Tooltip
                 title={
                   compareItem !== undefined
@@ -125,7 +125,8 @@ const ProductGridList = ({
                   <IoIosShuffle />
                 </button>
               </Tooltip>
-
+              */}
+              
               {/* quick view */}
               <Tooltip
                 title="Quick view"
@@ -270,7 +271,7 @@ const ProductGridList = ({
                 </button>
               </Tooltip>
 
-              {/* add to compare */}
+              {/* add to compare 
               <Tooltip
                 title={
                   compareItem !== undefined
@@ -294,6 +295,7 @@ const ProductGridList = ({
                   <IoIosShuffle />
                 </button>
               </Tooltip>
+              */}
 
               {/* quick view */}
               <Tooltip

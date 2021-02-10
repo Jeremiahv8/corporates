@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "ProductName": "Mystic Lights",
+        "Credit": true,
+        "Amount": -24,
+        "ToDomain":"mystic-lights.com",
+        "ToFirstName":"Mystic",
+        "ToLastName":"Lights"
+    },
+    {
+        "id": "2",
+        "ProductName": "Mystic Lights",
+        "Credit": true,
+        "Amount": -24,
+        "ToDomain":"mystic-lights.com",
+        "ToFirstName":"Mystic",
+        "ToLastName":"Lights"
+    }
+]

@@ -117,52 +117,52 @@ const Collection = () => {
         <div style={{display: "none", height: "1500px", width: "200px", background: "yellow", backgroundImage: "url('https://www.thephoblographer.com/wp-content/uploads/2018/09/Chris-Gampat-The-Phoblographer-Canon-RF-50mm-f1.2-L-USM-sample-images-in-Hawaii-45-770x1155.jpg')"}}></div>
         
         {/* hero slider */}
-      <HeroSliderTwo
-        sliderData={heroSliderData}
-        spaceBottomClass="space-mb--50"
-      />
-      {/* category slider */}
-      <CategorySlider
-        categoryData={categoryData}
-        spaceBottomClass="space-mb--r100"
-      />
+        <HeroSliderTwo
+          sliderData={heroSliderData}
+          spaceBottomClass="space-mb--50"
+        />
+        {/* category slider */}
+        <CategorySlider
+          categoryData={categoryData}
+          spaceBottomClass="space-mb--r100"
+        />
 
-      {/* products */}
-      <SectionTitleOne
-        title="Handcrafted Candles"
-        subtitle="Made in Colorado"
-      />
-      
-      {/*
-      <div className="products-wrapper space-mb--r100">
-        <Container className="wide">
-          <Row className="five-column">
-            <ProductGridWrapper
-              products={products}
-              bottomSpace="space-mb--r50"
-            />
-          </Row>
-          <div className="text-center">
-            <Link
-              href="/shop/left-sidebar"
-              as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
-            >
-              <a className="lezada-loadmore-button">
-                <IoIosAdd /> SEE MORE ...
-              </a>
-            </Link>
-          </div>
-        </Container>
-      </div>
-      */}
+        {/* products */}
+        <SectionTitleOne
+          title="Handcrafted Candles"
+          subtitle="Made in Colorado"
+        />
+        
+        {/*
+        <div className="products-wrapper space-mb--r100">
+          <Container className="wide">
+            <Row className="five-column">
+              <ProductGridWrapper
+                products={products}
+                bottomSpace="space-mb--r50"
+              />
+            </Row>
+            <div className="text-center">
+              <Link
+                href="/shop/left-sidebar"
+                as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
+              >
+                <a className="lezada-loadmore-button">
+                  <IoIosAdd /> SEE MORE ...
+                </a>
+              </Link>
+            </div>
+          </Container>
+        </div>
+        */}
 
-      {/* blog post slider */}
-      <BlogPostSlider blogData={blogData} spaceBottomClass="space-mb--50" />
+        {/* blog post slider */}
+        <BlogPostSlider blogData={blogData} spaceBottomClass="space-mb--50" />
 
-      {/*shop info*/}
-      <ShopInfo />
+        {/*shop info*/}
+        <ShopInfo />
 
-      <FooterOne />
+        <FooterOne />
       </div>
 
 

@@ -64,8 +64,6 @@ class MyApp extends App {
 
           <meta name="nightmode" content="enable/disable"/>
 
-          <meta name="viewport" content="uc-fitscreen=yes"/>
-
           <meta name="layoutmode" content="fitscreen/standard"/>
 
           <meta name="imagemode" content="force"/>

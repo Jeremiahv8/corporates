@@ -23,14 +23,14 @@
             {
                 "id": "1",
                 "name": "Facebook",
-                "url": "https://www.facebook.com/AegeanTT",
+                "url": "https://www.facebook.com/Mystic-Light-100860701872238",
                 "enabled": true
             },
             {
                 "id": "2",
                 "name": "Instagram",
                 "url": "https://www.instagram.com/aegean_tt/",
-                "enabled": true
+                "enabled": false
             },
             {
                 "id": "3",

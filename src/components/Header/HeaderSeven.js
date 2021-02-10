@@ -28,6 +28,10 @@ import AppsIcon from '@material-ui/icons/Apps';
 
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 
+
+import TransactionHistory from '../../components/transaction-history.json';
+
+
 const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppState, ProfileState, setProfileState }) => {
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
@@ -174,7 +178,10 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
 
   }, []);
 
+  const [Credit, setCredit] = useState(0.00);
+s
   return (
+
     <Fragment>
       <header style={{height: "56px"}}
         className={`topbar-shadow transparent-style white-content ${
@@ -238,6 +245,19 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </button>
                 </li>
                 */}
+
+                <li>
+                  <button
+                    onClick={() => {
+                      setOffCanvasSearchActive(true);
+                      document
+                        .querySelector("body")
+                        .classList.add("overflow-hidden");
+                    }}
+                  >
+                    <IoIosSearch />
+                  </button>
+                </li>
 
                 <li>
                   <button
