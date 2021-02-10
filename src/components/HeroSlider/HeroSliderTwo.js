@@ -23,7 +23,7 @@ const HeroSliderTwo = ({ sliderData, spaceBottomClass }) => {
   };
   return (
     <div
-      className={`hero-slider-two ${spaceBottomClass ? spaceBottomClass : ""}`}
+      className={`hero-slider-two ${spaceBottomClass ? spaceBottomClass : ""}`} style={{borderBottom: "5px solid #333333"}}
     >
       <div className="hero-slider-two__wrapper">
         <Swiper {...params}>

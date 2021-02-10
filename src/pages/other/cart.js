@@ -64,8 +64,8 @@ const Cart = ({
                         <tr key={i}>
                           <td className="product-thumbnail">
                             <Link
-                              href={`/shop/product-basic/[slug]?slug=${product.slug}`}
-                              as={`${process.env.PUBLIC_URL}/shop/product-basic/${product.slug}`}
+                              href={`/shop/[slug]?slug=${product.slug}`}
+                              as={`shop/${product.slug}`}
                             >
                               <a>
                                 <img
@@ -82,7 +82,7 @@ const Cart = ({
                           <td className="product-name">
                             <Link
                               href={`/shop/product-basic/[slug]?slug=${product.slug}`}
-                              as={`${process.env.PUBLIC_URL}/shop/product-basic/${product.slug}`}
+                              as={`/shop/${product.slug}`}
                             >
                               <a>{product.name}</a>
                             </Link>
@@ -232,8 +232,8 @@ const Cart = ({
                   <div className="item-empty-area__text">
                     <p className="space-mb--30">No items found in cart</p>
                     <Link
-                      href="/shop/left-sidebar"
-                      as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
+                      href="/shop"
+                      as={"/shop"}
                     >
                       <a className="lezada-button lezada-button--medium">
                         Shop Now
