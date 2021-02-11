@@ -245,7 +245,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                     <IoIosSearch />
                   </button>
                 </li>
-                */}
+                
 
                 <li>
                   <button
@@ -256,8 +256,26 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                         .classList.add("overflow-hidden");
                     }}
                   >
-                    <IoIosSearch />
+                    <div>$0.00</div>
                   </button>
+                </li>
+                */}
+                <li>
+                  <Link
+                    href="/heaven"
+                    as={"heaven"}
+                  >
+                    <a>
+                      <IoIosHeartEmpty />
+                      {wishlistItems.length >= 1 ? (
+                        <span className="count">
+                          {wishlistItems.length ? wishlistItems.length : ""}
+                        </span>
+                      ) : (
+                        ""
+                      )}
+                    </a>
+                  </Link>
                 </li>
 
                 <li>
@@ -296,7 +314,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                     </IconButton>
                   </button>
                 </li>
-                */}
+                
                 <li >
                 <button
                     onClick={() => {
@@ -322,6 +340,7 @@ const HeaderSeven = ({ aboutOverlay, cartItems, wishlistItems, AppState, setAppS
                   </a>
                   </button>
                 </li>
+                */}
                   
               </ul>
 

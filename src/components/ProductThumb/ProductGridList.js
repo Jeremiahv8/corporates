@@ -40,7 +40,7 @@ const ProductGridList = ({
             <Link
               href={`/shop/[slug]?slug=${product.slug}`}
               as={
-                process.env.PUBLIC_URL + "/shop/" + product.slug
+                "/shop/" + product.slug
               }
             >
               <a className="image-wrap">
@@ -210,7 +210,7 @@ const ProductGridList = ({
             <Link
               href={`/shop/[slug]?slug=${product.slug}`}
               as={
-                process.env.PUBLIC_URL + "/shop/" + product.slug
+                "/shop/" + product.slug
               }
             >
               <a className="image-wrap">

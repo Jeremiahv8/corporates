@@ -83,7 +83,7 @@ const BlogPostSlider = ({ blogData, spaceBottomClass }) => {
                           >
                             <a>
                               <img
-                                src={single.thumbImage[1]}
+                                src={single.thumbImage[2]}
                                 className="img-fluid"
                                 alt=""
                               />
