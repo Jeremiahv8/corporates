@@ -194,8 +194,8 @@ const Heaven = ({
                   <div className="item-empty-area__text">
                     <p className="space-mb--30">No items found in Heaven</p>
                     <Link
-                      href="/shop/left-sidebar"
-                      as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
+                      href="/shop"
+                      as={"/shop"}
                     >
                       <a className="lezada-button lezada-button--medium">
                         Shop Now
